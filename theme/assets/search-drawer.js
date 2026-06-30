@@ -82,11 +82,13 @@ class DrawerSearchSection extends HTMLElement {
   // }
 
   onToggle() {
+    
     if (this.hasAttribute("open")) {
       this.removeAttribute("open");
       setTabindex(this.toggleTabindexElements, "-1");
       setTabindex([this.mainTrigger], "0");
       this.isOpen = false;
+      this.querySelector('.store-search-form').setAttribute('aria-expanded', false);
       setTimeout(() => {
           this.mainTrigger.focus();
         }, 0);
@@ -100,6 +102,7 @@ class DrawerSearchSection extends HTMLElement {
         this.input.value.length,
       );
       this.isOpen = true;
+      this.querySelector('.store-search-form').setAttribute('aria-expanded', true);
     }
   }
 
@@ -277,6 +280,8 @@ class DrawerSearchSection extends HTMLElement {
     this.predictiveSearchResults.innerHTML = resultsMarkup;
 
     this.setAttribute("results", true);
+    this.querySelector('.search-result-list').setAttribute("aria-expanded", true);
+
 
     this.setLiveRegionResults();
   }
@@ -294,7 +299,7 @@ class DrawerSearchSection extends HTMLElement {
     this.removeAttribute("results");
     this.setAttribute("empty", true);
     this.statusElement.innerHTML = this.suggestionMenuContent.innerHTML || '';
-
+    this.querySelector('.search-result-list').setAttribute("aria-expanded", false);
     clearTimeout(this.timeOut);
     setTimeout(() => {
       this.statusElement.removeAttribute("aria-hidden");

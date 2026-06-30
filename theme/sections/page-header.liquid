@@ -324,6 +324,7 @@ myDiv.setAttribute('role', 'banner');
         data-search-page-url="{{ routes.search_url }}"
         data-search-properties="{{ search_properties }}"
         data-enable-predictive-search="{{ settings.enable_predictive_search }}"
+        
       >
         <div
           {% comment %}for="search-shop"{% endcomment %}
@@ -332,6 +333,8 @@ myDiv.setAttribute('role', 'banner');
           tabindex="0"
           role="button"
           aria-label="{{ 'aria-label.page-header-open-search' | t }}"
+          aria-controls="search-panel"
+          aria-haspopup="true"
         >
           {% if settings.search_icon %}
             {{
@@ -347,11 +350,13 @@ myDiv.setAttribute('role', 'banner');
           class="wt-header__search__body store-search-form"
           action="{{ routes.search_url }}"
           method="get"
-          role="search"
+          role="dialog"
+          id="search-panel"
+          aria-expanded="false"
         >
           <input type="hidden" name="type" value="product">
 
-          <div class="wt-header__search__form">
+          <div class="wt-header__search__form" role="search">
             <label class="wt-header__icon wt-header__search__label" for="search-shop">
               {% if settings.search_icon %}
                 {{
