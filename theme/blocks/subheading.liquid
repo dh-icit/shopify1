@@ -1,0 +1,37 @@
+{% if block.settings.subheading %}
+  {% assign prefix = 'hero' %}
+  <div
+    data-block-id="{{ block.id }}"
+    class="{% if prefix %}{{ prefix }}{% else %}block{% endif %}__subheading {% if block.settings.subheading_disable_on_mobile %}{% if prefix %}{{ prefix }}{% else %}block{% endif %}__subheading--mobile{% endif %}"
+  >
+    {{ block.settings.subheading | escape | newline_to_br }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "t:sections.image-banner.subheading.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.settings.settings.subheading.label",
+      "default": "Tell your story"
+    },
+    {
+      "type": "checkbox",
+      "id": "subheading_disable_on_mobile",
+      "label": "t:sections.global.disable_on_mobile",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.image-banner.subheading.name",
+      "settings": {
+        "subheading": "Subheading"
+      }
+    }
+  ]
+}
+{% endschema %}

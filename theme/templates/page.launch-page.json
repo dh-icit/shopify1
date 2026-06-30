@@ -1,0 +1,528 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "image_banner_8TjbDq": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "heading": "",
+        "full-width-enabled": false,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/Copy_of_Halloween_Hero_Banner.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "#000000",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_NRPxC4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AP9FkW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Order 2 or more shirts for free shipping!",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_igLJCF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Halloween shirts are our normal men's Lift Box shirts but they are unisex. <strong>Please note:</strong> None of these shirts will be in any Lift Box, this is a separate release from the monthly box.</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AP9FkW",
+        "text_igLJCF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 8,
+        "margin-bottom": 4
+      }
+    },
+    "separator_MVQLqM": {
+      "type": "separator",
+      "name": "t:sections.separator.presets.name",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "featured_product_HfjRBF": {
+      "type": "featured-product",
+      "blocks": {
+        "title_ttN3pA": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_KiDDTn": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "text_afha8b": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>Take advantage of a bonus Mystery Snack Box for only $10! This is a one-time buy, it does not create or affect any subscriptions. (If you order more than one, we can not guarantee it will not be identical.)</p>",
+            "page": ""
+          }
+        },
+        "variant_picker_BhEVUB": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "inventory_qHJELW": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons_KrCJiU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "title_ttN3pA",
+        "price_KiDDTn",
+        "text_afha8b",
+        "variant_picker_BhEVUB",
+        "inventory_qHJELW",
+        "buy_buttons_KrCJiU"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "heading": "",
+        "product": "mystery-snack-box-one-time-buy-1",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "enable-image-zoom": true,
+        "mobile-image": "normal",
+        "margin-top": 4,
+        "margin-bottom": 4
+      }
+    },
+    "featured_product_AYWTdM": {
+      "type": "featured-product",
+      "blocks": {
+        "title_q3YeKF": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_WU3YTA": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "variant_picker_TX7gci": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "information_popup_wqkf7M": {
+          "type": "information_popup",
+          "settings": {
+            "size_icon": "shirt",
+            "size_link": "Size Chart",
+            "size_content": "halloween-size-chart"
+          }
+        },
+        "inventory_UEWPaX": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons_FtADaq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "title_q3YeKF",
+        "price_WU3YTA",
+        "variant_picker_TX7gci",
+        "information_popup_wqkf7M",
+        "inventory_UEWPaX",
+        "buy_buttons_FtADaq"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "heading": "",
+        "product": "barbells-black-magic-copy",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "margin-top": 20,
+        "margin-bottom": 4
+      }
+    },
+    "featured_product_i8EMqP": {
+      "type": "featured-product",
+      "blocks": {
+        "title_MWQw4A": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_3JU3Tr": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "variant_picker_pwbrw4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "information_popup_JRGfMh": {
+          "type": "information_popup",
+          "settings": {
+            "size_icon": "shirt",
+            "size_link": "Size Chart",
+            "size_content": "halloween-size-chart"
+          }
+        },
+        "inventory_gzJNRk": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons_pJKHyQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "title_MWQw4A",
+        "price_3JU3Tr",
+        "variant_picker_pwbrw4",
+        "information_popup_JRGfMh",
+        "inventory_gzJNRk",
+        "buy_buttons_pJKHyQ"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "heading": "",
+        "product": "barbells-black-magic",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_product_hXrfdj": {
+      "type": "featured-product",
+      "blocks": {
+        "title_cLFGgN": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_VMY4jt": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "variant_picker_meC6hn": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "information_popup_cptNj8": {
+          "type": "information_popup",
+          "settings": {
+            "size_icon": "shirt",
+            "size_link": "Size Chart",
+            "size_content": "halloween-size-chart"
+          }
+        },
+        "inventory_XzKdw8": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons_3RLMWA": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "title_cLFGgN",
+        "price_VMY4jt",
+        "variant_picker_meC6hn",
+        "information_popup_cptNj8",
+        "inventory_XzKdw8",
+        "buy_buttons_3RLMWA"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "heading": "",
+        "product": "gainzilla",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_product_VwaPnE": {
+      "type": "featured-product",
+      "blocks": {
+        "title_RJBV8f": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_VegKqG": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "variant_picker_gWrMWp": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "information_popup_qhpePH": {
+          "type": "information_popup",
+          "settings": {
+            "size_icon": "shirt",
+            "size_link": "Size Chart",
+            "size_content": "halloween-size-chart"
+          }
+        },
+        "inventory_3kd6MY": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons_PDfpkG": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "title_RJBV8f",
+        "price_VegKqG",
+        "variant_picker_gWrMWp",
+        "information_popup_qhpePH",
+        "inventory_3kd6MY",
+        "buy_buttons_PDfpkG"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "heading": "",
+        "product": "iron-never-lies",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_8TjbDq",
+    "rich_text_NRPxC4",
+    "separator_MVQLqM",
+    "featured_product_HfjRBF",
+    "featured_product_AYWTdM",
+    "featured_product_i8EMqP",
+    "featured_product_hXrfdj",
+    "featured_product_VwaPnE"
+  ]
+}

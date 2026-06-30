@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "page-footer",
+      "blocks": {
+        "menu_bB7XxG": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "Customer Care",
+            "links": "customer-care"
+          }
+        },
+        "menu_FVzkic": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "Policies",
+            "links": "policies"
+          }
+        },
+        "text_dLzjfY": {
+          "type": "text",
+          "settings": {
+            "heading_text": "Contact",
+            "text": "<p><strong>EMAIL</strong>: info@theliftbx.com</p><p>You can call or text us at <strong>843-791-0451 </strong>for support. By texting this number, you agree to receive recurring SMS messages from The Lift Box related to your customer service inquiry. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe or HELP for help.</p><p><strong>ADDRESS</strong></p><p>3255 Fortune Drive, Ste B</p><p>North Charleston, SC 29418</p>"
+          }
+        },
+        "image_MKEER4": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/VETERAN_OWNED_OPERATED.png",
+            "image-width": 190
+          }
+        }
+      },
+      "block_order": [
+        "menu_bB7XxG",
+        "menu_FVzkic",
+        "text_dLzjfY",
+        "image_MKEER4"
+      ],
+      "settings": {
+        "show-social-media-icons": true,
+        "show_country_selector": true,
+        "show_country_selector_label": true,
+        "show_country_selector_flag": true,
+        "show_language_selector": true,
+        "enable_follow_on_shop": false,
+        "show-payments-icons": true,
+        "show-copyright": true,
+        "text": "© 2025 The Lift Box",
+        "big-logo-width": 28,
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

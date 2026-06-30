@@ -1,0 +1,117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_DKVb4L": {
+          "type": "announcement",
+          "settings": {
+            "text": "OVER 500,000+ BOXES SHIPPED SINCE 2017",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_DKVb4L"
+      ],
+      "settings": {
+        "marquee": true,
+        "animation_speed": "100",
+        "checkbox_close_announcement": true,
+        "color-body-text": "#ffffff",
+        "background_color": "#2d2d2d"
+      }
+    },
+    "header": {
+      "type": "page-header",
+      "blocks": {
+        "column_yVYQQ3": {
+          "type": "column",
+          "settings": {
+            "title": "Shop",
+            "promo_section_width": 6,
+            "heading_1": "",
+            "text_1": "View All Products",
+            "link_1": "",
+            "heading_2": "",
+            "text_2": "Women's Multi Capsules",
+            "link_2": "",
+            "heading_3": "",
+            "text_3": "Immunity Boost Capsules",
+            "link_3": "",
+            "heading_4": "",
+            "text_4": "Natural Collagen Capsules",
+            "link_4": "",
+            "heading_5": "",
+            "text_5": "Boost Energy Capsules",
+            "link_5": "",
+            "heading_6": "",
+            "text_6": "Men's Multi Capsules",
+            "link_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yVYQQ3"
+      ],
+      "settings": {
+        "layout": "option_3",
+        "sticky_header": true,
+        "sticky_header_always": false,
+        "header_bg_opacity": 44,
+        "header_bg_blur": 30,
+        "header_always_blurred": true,
+        "show_line_separator": true,
+        "show_shadow": true,
+        "logo": "shopify://shop_images/Shadowed_Logo_2.png",
+        "large_screen_logo_width": 160,
+        "mobile_screen_logo_width": 120,
+        "menu": "main-menu-12-1-copy",
+        "mobile_footer_menu": "",
+        "teaser_menu": "main-menu-12-1-copy",
+        "transparent_header_color": "#151515",
+        "show_country_selector": false,
+        "show_country_selector_label": false,
+        "show_country_selector_flag": false,
+        "show_language_selector": false,
+        "drawer_title": "THE LIFT BOX",
+        "typing_search": "Search...",
+        "suggestions_title": "most popular",
+        "suggestions_menu": ""
+      }
+    },
+    "page_header_image_banner_MDeWNz": {
+      "type": "page-header-image-banner",
+      "name": "Image banner for transparent header",
+      "settings": {
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/AMERICA_S_1_FITNESS_SUBSCRIPTION_BOX.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "page_header_image_banner_MDeWNz"
+  ]
+}

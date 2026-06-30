@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "b1762d2f-c545-46f9-ab66-b0f6dc390c56": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15329436369096__b1762d2f-c545-46f9-ab66-b0f6dc390c56-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions",
+            "disable_on_mobile": false,
+            "size_heading": 160,
+            "size_heading_mobile": 150
+          }
+        }
+      },
+      "block_order": [
+        "template--15329436369096__b1762d2f-c545-46f9-ab66-b0f6dc390c56-heading-1"
+      ],
+      "settings": {
+        "section_width": "short",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 32,
+        "margin-bottom": 0
+      }
+    },
+    "8cb67a60-3fd7-4c87-8040-f625fc677a4e": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": true,
+        "color-background": "#dfdfdf",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b1762d2f-c545-46f9-ab66-b0f6dc390c56",
+    "8cb67a60-3fd7-4c87-8040-f625fc677a4e"
+  ]
+}

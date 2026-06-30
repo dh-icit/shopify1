@@ -1,0 +1,391 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "separator_aVXGVH": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": true,
+        "color-background": "#000000",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "brands_hQqpyn": {
+      "type": "brands",
+      "blocks": {
+        "image_jteGLr": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Untitled_design__7.png",
+            "link": ""
+          }
+        },
+        "image_awU3iG": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/2.png",
+            "link": ""
+          }
+        },
+        "image_CpMaC4": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Untitled_design_7_522bcba6-9cde-47e2-b38e-5970620b1f55.jpg",
+            "link": ""
+          }
+        },
+        "image_8QanGt": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/3_5ce3b895-49e9-480d-834a-eea3ea15e749.png",
+            "link": ""
+          }
+        },
+        "image_kHF4dm": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Untitled__250_x_125_px___1.png",
+            "link": ""
+          }
+        },
+        "image_8WNAwe": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/4_3f5e2c92-c08f-4f1e-835b-60dcc49e6e37.png",
+            "link": ""
+          }
+        },
+        "image_gtT8qp": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Untitled__250_x_125_px.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jteGLr",
+        "image_awU3iG",
+        "image_CpMaC4",
+        "image_8QanGt",
+        "image_kHF4dm",
+        "image_8WNAwe",
+        "image_gtT8qp"
+      ],
+      "name": "t:sections.brands.settings.presets.name",
+      "settings": {
+        "heading": "MAKING THE NEWS SINCE 2017",
+        "animation": "marquee",
+        "animation_speed": "100",
+        "color-body-text": "#fbfaf6",
+        "background_color": "#000000",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "before_and_after_WjnXwQ": {
+      "type": "before-and-after",
+      "blocks": {
+        "subheading_pAUCgV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "TWO GREAT BOXES",
+            "subheading_disable_on_mobile": false
+          }
+        },
+        "heading_6bCqYi": {
+          "type": "heading",
+          "settings": {
+            "heading": "ONE GREAT SUBSCRIPTION",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_mVTVt7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our original Lift Box is packed with snacks, a drink, supplements, a specialty item, and a shirt while our Snack Box focuses on a wide variety of snacks and a few supplements. </p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pAUCgV",
+        "heading_6bCqYi",
+        "text_mVTVt7"
+      ],
+      "name": "t:sections.before_and_after.name",
+      "settings": {
+        "title": "CHOOSE YOUR PATH",
+        "layout": "image_first",
+        "before_image": "shopify://shop_images/46.jpg",
+        "after_image": "shopify://shop_images/45.jpg",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": false,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "enable_badges": true,
+        "before_badge": "LIFT BOX",
+        "after_badge": "SNACK BOX",
+        "section-color-body-text": "#151515",
+        "section-color-overlay": "#ffffff",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#ffffff",
+        "color-overlay": "#151515",
+        "color-overlay-opacity": 100,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 4,
+        "margin-bottom": 8
+      }
+    },
+    "scrolling_text_banner_7ziGpd": {
+      "type": "scrolling-text-banner",
+      "blocks": {
+        "heading_6UV6EX": {
+          "type": "heading",
+          "settings": {
+            "heading": "OVER 500,000 BOXES DELIVERED",
+            "size_heading": 90,
+            "size_heading_mobile": 90
+          }
+        }
+      },
+      "block_order": [
+        "heading_6UV6EX"
+      ],
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "animation_speed": 2,
+        "slide_height": "fixed_height_no_img",
+        "desktop_fixed_height": 100,
+        "mobile_fixed_height": 100,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "multicolumn_EfzXjX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_h4ftg9": {
+          "type": "column",
+          "settings": {
+            "heading": "SNACK BOX",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/48.jpg"
+          }
+        },
+        "column_fBBGhw": {
+          "type": "column",
+          "settings": {
+            "heading": "LIFT BOX",
+            "heading_disable_on_mobile": false,
+            "text": "<p>Plus a shirt (not pictured)!</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/49.jpg"
+          }
+        },
+        "column_qQ7KRk": {
+          "type": "column",
+          "settings": {
+            "heading": "SNACK BOX",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/51.jpg"
+          }
+        },
+        "column_PMW9Tt": {
+          "type": "column",
+          "settings": {
+            "heading": "LIFT BOX",
+            "heading_disable_on_mobile": false,
+            "text": "<p>Plus a shirt (not pictured)!</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/50.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "column_h4ftg9",
+        "column_fBBGhw",
+        "column_qQ7KRk",
+        "column_PMW9Tt"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "heading": "ACTUAL PAST BOXES",
+        "full-width-enabled": false,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "size_heading": 100,
+        "size_heading_mobile": 100,
+        "color-body-text": "#ffffff",
+        "background_color": "#151515",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "testimonials_AqAx9w": {
+      "type": "testimonials",
+      "blocks": {
+        "image_qnywrw": {
+          "type": "image",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"Every box is like Christmas and the shirts/tanks fit me just right! I’m obsessed and it’s the only tops I wear when working out!\"</p>",
+            "desktop_image": "shopify://shop_images/PDP_GIFs_7.gif",
+            "large_screen_logo_width": 110,
+            "mobile_screen_logo_width": 80,
+            "author": "Becky S."
+          }
+        },
+        "image_6hLQP3": {
+          "type": "image",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"Awesome mix of products and great value. Ended up buying several of the products I received samples of- would definitely recommend!\"</p>",
+            "desktop_image": "shopify://shop_images/Untitled_design_4.gif",
+            "large_screen_logo_width": 110,
+            "mobile_screen_logo_width": 100,
+            "author": "Sarah P."
+          }
+        },
+        "image_P74HJh": {
+          "type": "image",
+          "settings": {
+            "icon_select": "100",
+            "text": "<p>\"The box was packed and I loved the variety! The snacks were tasty, the shirt fit exactly right and I got more samples of supps than I expected. Well worth it!\"</p>",
+            "desktop_image": "shopify://shop_images/Untitled_design_3.gif",
+            "large_screen_logo_width": 110,
+            "mobile_screen_logo_width": 100,
+            "author": "Ryan S."
+          }
+        }
+      },
+      "block_order": [
+        "image_qnywrw",
+        "image_6hLQP3",
+        "image_P74HJh"
+      ],
+      "settings": {
+        "heading": "",
+        "image_shape": "circle",
+        "testimonial_text_size_desktop": 200,
+        "testimonial_text_size": 140,
+        "text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 36,
+        "margin-bottom": 40
+      }
+    },
+    "multicolumn_FfNnPV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WpjxUb": {
+          "type": "column",
+          "settings": {
+            "heading": "Lift Box",
+            "heading_disable_on_mobile": false,
+            "text": "<p>$39.95/month. Cancel any time hassle free.</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "secondary",
+            "button_label": "Shop Now",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://products/the-lift-box",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/46_2387e1dc-ea01-43e7-aa56-62fff40b3fcf.jpg"
+          }
+        },
+        "column_heXtXy": {
+          "type": "column",
+          "settings": {
+            "heading": "Snack Box",
+            "heading_disable_on_mobile": false,
+            "text": "<p>$24.95/month. Cancel any time hassle free.</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "secondary",
+            "button_label": "Shop Now",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://products/the-snack-box-monthly-subscription-1",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/45_1fd113ef-e527-4d07-93b2-dd88c6adc249.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "column_WpjxUb",
+        "column_heXtXy"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "heading": "CHOOSE YOUR BOX",
+        "full-width-enabled": false,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "size_heading": 100,
+        "size_heading_mobile": 100,
+        "color-body-text": "#ffffff",
+        "background_color": "#151515",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "separator_aVXGVH",
+    "brands_hQqpyn",
+    "before_and_after_WjnXwQ",
+    "scrolling_text_banner_7ziGpd",
+    "multicolumn_EfzXjX",
+    "testimonials_AqAx9w",
+    "multicolumn_FfNnPV"
+  ]
+}

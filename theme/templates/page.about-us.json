@@ -1,0 +1,323 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_hRU4nn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bKHV6c": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_bKHV6c"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "transparent",
+        "background_color": "transparent",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "43cbdafd-d48f-4d66-9ab5-c471be313d5b": {
+      "type": "image-with-text",
+      "blocks": {
+        "3f541413-67b8-4c65-8d71-a84071ae664f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2017, The Lift Box concept was born atop a shoot house near Camp Lejeune, where a break in the agenda allowed for some talk about supplements. After that talk with the team, Founder & CEO, Adam knew there had to be a better way to try new health and fitness items. The Lift Box was born.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "3f541413-67b8-4c65-8d71-a84071ae664f"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 420,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#fdfdfd",
+        "color-overlay": "#000000",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/5_4ffb652a-f5fa-4667-b439-c08a8b541d2c.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "d4180441-144f-448c-a157-500e0a202d36": {
+      "type": "image-with-text",
+      "blocks": {
+        "210693db-9734-4e2b-b162-2d4089b64b48": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adam's spare bedroom became the HQ for the first couple of years. Things were slow but every month the boxes kept getting better and better. His two young sons provided some much needed help packing.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "210693db-9734-4e2b-b162-2d4089b64b48"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 400,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#f7f7f7",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/3_64aa0595-5b01-4188-a5fd-1bd1d9fac444.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "85b9cb93-1be6-474a-a740-29ece523f118": {
+      "type": "image-with-text",
+      "blocks": {
+        "b36f9bca-3524-473d-b88f-21d201462254": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A late night DM turned into a lifelong business partnership and friendship. Dan, a Navy veteran of 6 years and fellow dad, came on as the CMO and Co-Owner.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "b36f9bca-3524-473d-b88f-21d201462254"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#000000",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#fdfdfd",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/2_f55cd4c2-1b68-48f9-a940-7857b15b387d.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_BzKWme": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_yNHkCQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lift Box really started to gain some traction and scaled to shipping over 10,000 monthly boxes to an incredible community of subscribers and was being talked about in publications like Men's Journal.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_yNHkCQ"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 420,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#ffffff",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#000000",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/6_8c06016d-09b3-401e-b87d-7fba9d192676.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_7T7X9t": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_hLrW6x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lift Box continued to grow that the only way forward was to move into a dedicated Lift Box warehouse. The business as well as Adam and Dan's families moved down to South Carolina and the next stage was set.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_hLrW6x"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#000000",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#fdfdfd",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/1_01ce0343-24b1-4686-93d2-f54a7ef8475a.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_n6F6Dg": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_HDgmb6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once South Carolina became home, Adam and Dan launched <a href=\"https://headlinesoversidelines.com/\" target=\"_blank\" title=\"https://headlinesoversidelines.com/\">Headlines Over Sidelines,</a> a fitness media company and <a href=\"https://www.instagram.com/missionreadynutrition\" target=\"_blank\" title=\"https://www.instagram.com/missionreadynutrition\">Mission Ready Nutrition</a>, a supplement retail store. We even made the news!</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_HDgmb6"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 420,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#fafafa",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/4_f31e5918-d9fa-4b6e-ba07-1af689c0d1cf.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_Ngj6ce": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_DNEnEm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fast forward to 2025 and Lift Box made the Inc. 5000 list! At this point all we can is say is thank you. We're still just getting started and are so fortunate to have an incredible community along for the ride.</p><p>- Adam & Dan</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_DNEnEm"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 480,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "#000000",
+        "section-color-overlay": "#000000",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#fdfdfd",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Screenshot_2025-09-10_at_10.11.57_PM.png",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_hRU4nn",
+    "43cbdafd-d48f-4d66-9ab5-c471be313d5b",
+    "d4180441-144f-448c-a157-500e0a202d36",
+    "85b9cb93-1be6-474a-a740-29ece523f118",
+    "image_with_text_BzKWme",
+    "image_with_text_7T7X9t",
+    "image_with_text_n6F6Dg",
+    "image_with_text_Ngj6ce"
+  ]
+}
