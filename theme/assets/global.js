@@ -155,7 +155,6 @@ class QuantityCounter extends HTMLElement {
   }
 
   onIncrease() {
-    debugger;
     const currentValue = parseInt(this.counterEl.value);
     if (currentValue < this.max) {
       this.updateValue(currentValue + 1);

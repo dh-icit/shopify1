@@ -515,7 +515,7 @@ if (!customElements.get("slideshow-section")) {
         }
 
         // Finally, init Swiper with per-instance elements only
-        console.log(containerEl, cfg);
+        
         this.swiper = new Swiper(containerEl, cfg);
       }
 

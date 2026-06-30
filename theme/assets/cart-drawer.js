@@ -39,7 +39,7 @@ class CartDrawerSection extends HTMLElement {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, () => {
       if (this.isOpen) {
         setTabindex(this.toggleEelements(), "0");
-        this.closeButton().focus();
+        // this.closeButton().focus();
       }
     });
   }
@@ -117,7 +117,7 @@ class CartDrawerSection extends HTMLElement {
     } else {
       this.setAttribute("open", "");
       this.isOpen = true;
-      this.closeButton().focus();
+    //   this.closeButton().focus();
       this.temporaryHideFocusVisible();
       setTabindex(this.toggleEelements(), "0");
     }
@@ -201,7 +201,7 @@ class CartDrawerSection extends HTMLElement {
       setTimeout(() => {
         this.toggleDrawerClasses();
         if (this.isOpen) {
-          this.closeButton().focus();
+        //   this.closeButton().focus();
         }
       });
     }
