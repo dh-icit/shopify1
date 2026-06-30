@@ -55,7 +55,8 @@
 .wt-brands__marquee:hover {
   animation-play-state: paused;
 }
-.wt-brands__marquee:hover .wt-brands__marquee__content {
+.wt-brands__marquee:hover .wt-brands__marquee__content,
+.wt-brands__marquee:focus-within .wt-brands__marquee__content {
   animation-play-state: paused;
 }
 .wt-brands__marquee__content {
@@ -68,6 +69,7 @@
   padding-right: var(--mgap);
   gap: var(--mgap);
 }
+
 @media (min-width: 600px) {
   .wt-brands__marquee__content {
     --mgap: 80px;
@@ -88,8 +90,8 @@
   flex-shrink: 0;
 }
 .wt-brands__marquee__content--2 {
-  animation: scroll2 var(--time) linear infinite;
-  animation-delay: calc(var(--time) / -2);
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time) / -2);
 }
 .wt-brands__link {
   display: flex;
