@@ -152,6 +152,8 @@ if (!customElements.get("scrolling-text-banner")) {
 
         // Create a container for the scrolling wrappers
         const scrollingContainer = document.createElement("div");
+        scrollingContainer.setAttribute('aria-label', textContent);
+        scrollingContainer.setAttribute('tabindex', '0');
         scrollingContainer.classList.add("scrolling-container");
         heroTitle.appendChild(scrollingContainer);
 
