@@ -40,6 +40,8 @@
   display: flex;
   border-radius: 0 !important;
   max-width: 100% !important;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .wt-scrolling-text-banner .hero__title {
   position: relative;
@@ -64,8 +66,36 @@
     flex-shrink: 0;
     animation: scroll-left linear infinite;
 }
-.wt-scrolling-text-banner .hero__title:focus-within .scrolling-wrapper,
-.wt-scrolling-text-banner .hero__title:focus .scrolling-wrapper {
+.wt-scrolling-text-banner .hero-toggle_btn,
+.marquee-toggle_btn {
+    content: 'x';
+    position: relative;
+    z-index: 20;
+    padding: 6px 8px;
+    /* visibility: hidden; */
+    position: absolute;
+    opacity: 0.5;
+    right: 8px;
+    bottom: 0px;
+}
+.marquee-toggle_btn {
+    bottom: 8px;
+}
+
+.wt-scrolling-text-banner .hero-toggle_btn:focus,
+.wt-scrolling-text-banner .hero-toggle_btn:hover {
+    /* visibility: visible; */
+    opacity: 1;
+}
+.wt-scrolling-text-banner .hero-toggle_btn:before,
+.marquee-toggle_btn:before {
+    content: 'x';
+}
+.wt-scrolling-text-banner .hero-toggle_btn.stop:before,
+.marquee-toggle_btn.stop:before {
+    content: '▶';
+}
+.wt-scrolling-text-banner .scrolling-container.disabled .scrolling-wrapper {
     animation-play-state: paused;
 }
 

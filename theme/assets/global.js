@@ -535,3 +535,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // observer.disconnect();
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btns = document.querySelectorAll('.marquee-toggle_btn');
+    btns.forEach(item => {
+        item.addEventListener('click', function(e) {
+            const scrollingContainer = e.currentTarget.closest('.wt-brands__marquee');
+            const isPlaying = this.getAttribute('aria-pressed') === 'true';
+
+            scrollingContainer.classList.toggle('disabled');
+            this.classList.toggle('stop');
+
+            this.setAttribute('aria-pressed', !isPlaying);
+        });
+    });
+    
+
+});

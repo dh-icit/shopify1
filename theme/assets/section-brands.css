@@ -55,9 +55,12 @@
 .wt-brands__marquee:hover {
   animation-play-state: paused;
 }
-.wt-brands__marquee:hover .wt-brands__marquee__content,
+/* .wt-brands__marquee:hover .wt-brands__marquee__content,
 .wt-brands__marquee:focus-within .wt-brands__marquee__content {
   animation-play-state: paused;
+} */
+.wt-brands__marquee.disabled .wt-brands__marquee__content {
+    animation-play-state: paused;
 }
 .wt-brands__marquee__content {
   --mgap: 60px;

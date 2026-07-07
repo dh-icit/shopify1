@@ -152,8 +152,9 @@ if (!customElements.get("scrolling-text-banner")) {
 
         // Create a container for the scrolling wrappers
         const scrollingContainer = document.createElement("div");
-        scrollingContainer.setAttribute('aria-label', textContent);
-        scrollingContainer.setAttribute('tabindex', '0');
+        // scrollingContainer.setAttribute('aria-label', textContent);
+        
+
         scrollingContainer.classList.add("scrolling-container");
         heroTitle.appendChild(scrollingContainer);
 
@@ -183,6 +184,23 @@ if (!customElements.get("scrolling-text-banner")) {
 
         // Set animation speed dynamically
         this.setAnimationSpeed(scrollingContainer);
+
+        const toggleBtn = document.createElement('button');
+        toggleBtn.classList.add('hero-toggle_btn');
+        toggleBtn.innerText = 'x';
+        toggleBtn.setAttribute('aria-label', 'Play/stop');
+        toggleBtn.setAttribute('aria-pressed', 'true');
+        toggleBtn.setAttribute('tabindex', '0');
+        heroTitle.after(toggleBtn);
+
+        toggleBtn.addEventListener('click', function() {
+            const isPlaying = this.getAttribute('aria-pressed') === 'true';
+
+            scrollingContainer.classList.toggle('disabled');
+            this.classList.toggle('stop');
+
+            this.setAttribute('aria-pressed', !isPlaying);
+        });
       }
 
       setAnimationSpeed(scrollingContainer) {
