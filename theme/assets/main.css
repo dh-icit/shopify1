@@ -7496,6 +7496,9 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
   margin-right: calc(var(--gap, 8px) * 1.5);
   margin-top: -2px;
 }
+.wt-product__option__body--tiles input:focus + label::before {
+    border-color: red !important;
+}
 .wt-product__option__body--drawer .drawer__list__item input.disabled + label {
   color: var(--color-body-text-light);
   color: #fff;

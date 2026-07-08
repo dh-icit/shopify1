@@ -108,7 +108,7 @@ class CartDrawerSection extends HTMLElement {
     if (this.hasAttribute("open")) {
       this.removeAttribute("open");
       this.isOpen = false;
-      // this.mainTrigger.focus();
+      this.mainTrigger.focus();
       this.temporaryHideFocusVisible();
       setTabindex(this.toggleEelements(), "-1");
 
@@ -117,7 +117,7 @@ class CartDrawerSection extends HTMLElement {
     } else {
       this.setAttribute("open", "");
       this.isOpen = true;
-    //   this.closeButton().focus();
+      this.closeButton().focus();
       this.temporaryHideFocusVisible();
       setTabindex(this.toggleEelements(), "0");
     }

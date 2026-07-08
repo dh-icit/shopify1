@@ -1480,7 +1480,7 @@ page-header {
 .page-header-sticky .page-header {
   position: sticky;
   top: 0;
-  z-index: 16;
+  z-index: 99;
   transition: transform 0.3s ease;
 }
 .page-header-sticky .page-header.hide {
@@ -4177,6 +4177,10 @@ mega-menu-section {
   transform: translateX(0);
   opacity: 1;
   padding: 0;
+}
+
+.wt-header__body .wt-drawer-search--active .before_store-search-form {
+    height: 100%;
 }
 
 .search-overlay-on {

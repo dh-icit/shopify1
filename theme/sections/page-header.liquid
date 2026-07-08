@@ -346,13 +346,13 @@ myDiv.setAttribute('role', 'banner');
             {% render 'icons', id: 'search' %}
           {% endif %}
         </div>
+        <div class="before_store-search-form" role="dialog" style="width: 100%;" aria-label="Search dialog" aria-expanded="false">
         <form
           class="wt-header__search__body store-search-form"
           action="{{ routes.search_url }}"
           method="get"
-          role="dialog"
-          id="search-panel"
-          aria-expanded="false"
+          role="search"
+          id="search-panel"          
         >
           <input type="hidden" name="type" value="product">
 
@@ -438,6 +438,7 @@ myDiv.setAttribute('role', 'banner');
             <div class="search-result-wrapper" data-predictive-search></div>
           </div>
         </form>
+        </div>
       </search-drawer>
     {% endif %}
     </div>

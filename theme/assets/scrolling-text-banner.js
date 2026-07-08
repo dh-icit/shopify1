@@ -187,7 +187,7 @@ if (!customElements.get("scrolling-text-banner")) {
 
         const toggleBtn = document.createElement('button');
         toggleBtn.classList.add('hero-toggle_btn');
-        toggleBtn.innerText = 'x';
+        // toggleBtn.innerText = 'x';
         toggleBtn.setAttribute('aria-label', 'Play/stop');
         toggleBtn.setAttribute('aria-pressed', 'true');
         toggleBtn.setAttribute('tabindex', '0');

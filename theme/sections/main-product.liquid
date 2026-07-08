@@ -1897,7 +1897,7 @@
                               </div>
                             {% endif %}
                             <div class="{% if options_body_class == 'drawer' %}drawer__content{% else %}swiper-container{% endif %}">
-                              <fieldset class="js product-form__input">
+                              <fieldset class="js product-form__input" role="radiogroup" aria-label="{{ option.name }} product variat options">
                               <legend class="js product-form__input-title hidden">{{ option.name }}</legend>
                                 <ul class="{{ options_container_class }}__list {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
                                   {%- for value in option.values -%}
@@ -1937,6 +1937,7 @@
                                         {% comment %} Shopify's option-value availability: disable if this value is unavailable in any variant (top-down model). Applied for all products for consistent behavior. {% endcomment %}
                                         {% if value.available == false %}
                                           class="disabled"
+                                          disabled
                                         {% endif %}
                                       >
                                       {%- case picker_type -%}

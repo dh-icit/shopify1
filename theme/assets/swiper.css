@@ -1253,15 +1253,19 @@ shopify-editor .wt-slider__container,
   box-sizing: border-box;
   padding-bottom: calc(var(--gap, 8px) * 5);
 }
+/* body .wt-slider__container .wt-slider__nav-btn, main .wt-slider__container .wt-slider__nav-btn {
+    display: flex;
+} */
+
 @media (hover: hover) {
-  body .wt-slider__container:hover .wt-slider__scrollbar,
-  main .wt-slider__container:hover .wt-slider__scrollbar,
+  body .wt-slider__container .wt-slider__scrollbar,
+  main .wt-slider__container .wt-slider__scrollbar,
   shopify-editor .wt-slider__container:hover .wt-slider__scrollbar,
   .wt-cart .wt-slider__container:hover .wt-slider__scrollbar {
     height: 4px;
   }
-  body .wt-slider__container:hover .wt-slider__nav-btn,
-  main .wt-slider__container:hover .wt-slider__nav-btn,
+  body .wt-slider__container .wt-slider__nav-btn,
+  main .wt-slider__container .wt-slider__nav-btn,
   shopify-editor .wt-slider__container:hover .wt-slider__nav-btn,
   .wt-cart .wt-slider__container:hover .wt-slider__nav-btn {
     display: flex;
@@ -1272,15 +1276,15 @@ shopify-editor .wt-slider__container,
   .wt-cart .wt-slider__container:hover .wt-slider__nav-btn.swiper-button-disabled {
     display: none;
   }
-  body .wt-slider__container:hover .swiper-button-next,
-  main .wt-slider__container:hover .swiper-button-next,
+  body .wt-slider__container .swiper-button-next,
+  main .wt-slider__container .swiper-button-next,
   shopify-editor .wt-slider__container:hover .swiper-button-next,
   .wt-cart .wt-slider__container:hover .swiper-button-next {
     margin-right: calc(var(--gap, 8px) * 3);
   }
-  body .wt-slider__container:hover .swiper-button-prev,
-  main .wt-slider__container:hover .swiper-button-prev,
-  shopify-editor .wt-slider__container:hover .swiper-button-prev,
+  body .wt-slider__container .swiper-button-prev,
+  main .wt-slider__container .swiper-button-prev,
+  shopify-editor .wt-slider__container .swiper-button-prev,
   .wt-cart .wt-slider__container:hover .swiper-button-prev {
     margin-left: calc(var(--gap, 8px) * 3);
   }
