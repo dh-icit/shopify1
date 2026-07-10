@@ -550,5 +550,72 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     
+    const error = document.querySelector('.form__error-field');
+    if(error ) {
+        document.querySelector('.form__field--email input').focus();
+    }
+
+    const button = document.querySelector('#shopify-subscription-policy-button');
+
+    if (button) {
+        const link = document.createElement('a');
+
+        [...button.attributes].forEach(attr => {
+            if (attr.name !== 'type') {
+                link.setAttribute(attr.name, attr.value);
+            }
+        });
+
+        link.href = '#';
+        link.innerHTML = button.innerHTML;
+
+        button.replaceWith(link);
+    }
+
+    const cart_checkout = document.querySelector('.cart__checkout_custom');
+    if(cart_checkout) {
+        cart_checkout.addEventListener('click', function(e) {
+            e.preventDefault;
+            const form = document.querySelector("form#cart");
+            form.submit();
+        });
+    }
 
 });
+
+
+const container = document.querySelector('[data-govx-id="page"]');
+
+if (container) {
+    const observer = new MutationObserver(() => {
+        const button = container.querySelector('.shopify-payment-button__button');
+
+        if (!button || button.tagName === 'A') {
+            return;
+        }
+
+        const link = document.createElement('a');
+
+        
+        [...button.attributes].forEach(attr => {
+            if (attr.name !== 'type') {
+                link.setAttribute(attr.name, attr.value);
+            }
+        });
+
+        
+        link.href = button.dataset.govxHref;
+        link.classList.add('wt-button');
+
+        link.innerHTML = button.innerHTML;
+
+        button.replaceWith(link);
+
+        observer.disconnect();
+    });
+
+    observer.observe(container, {
+        childList: true,
+        subtree: true
+    });
+}

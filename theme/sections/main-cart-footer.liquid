@@ -127,21 +127,20 @@
                     </button>
                   </noscript>
 
-                  <button
-                    aria-label="{{ 'sections.cart.checkout' | t }}"
-                    type="submit"
-                    class="wt-cart__cta cart__checkout"
-                    name="checkout"
+                  
+                  <a
+                    href="/checkout"
+                    aria-label="{{ 'sections.cart.checkout' | t }}"                   
+                    class="wt-cart__cta cart__checkout wt-button cart__checkout_custom"
                     {% if cart == empty %}
                       disabled
                     {% endif %}
-                    form="cart"
                   >
                     {% if settings.enable-lock-icon %}
                       {% render 'icon-lock' %}
                     {% endif %}
                     {{ 'sections.cart.checkout' | t }}
-                  </button>
+                    </a>
 
                   <a href="{{ routes.all_products_collection_url }}" class="wt-more wt-cart__back-link">
                     <span class="wt-more__text">{{ 'general.continue_shopping' | t }}</span>

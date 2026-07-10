@@ -12772,3 +12772,14 @@ a[href="https://www.parcelwill.com/"],
 .pp_tracking_form_div.both_form > div {
   opacity: 1 !important;
 }
+
+.govx-id-page-wrapper .shopify-payment-button__button--unbranded {
+    padding: 1em 2em !important;
+    display: inline-block !important;
+}
+
+.jm-review-widget-minimal-header__action-buttons .jm-button:focus-visible,
+.jm-sort-filter__select[data-v-2bbaaaa5]:focus-visible,
+.jm-button--secondary[data-v-9640c170]:focus-visible {
+    outline: 2px solid var(--outline-color) !important;
+}
