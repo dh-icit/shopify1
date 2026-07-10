@@ -766,7 +766,7 @@ button[disabled],
   border-color: transparent;
   background: transparent;
   font-size: 2rem;
-  color: var(--color-input-placeholder);
+  color: #151515;
 }
 @media (hover: hover) {
   .counter button:hover {
@@ -1042,6 +1042,9 @@ button[disabled],
   /* background: rgba(0, 0, 0, 1);
   padding: 3px 10px;
   border-radius: 18px; */
+}
+.shoppable-product-card .price-item.price-item--sale.price-item--last.wt-product__price__final {
+    color: var(--color-sale-price);
 }
 .wt-product__main--featured-product .price-item.price-item--sale.price-item--last.wt-product__price__final,
 .wt-featured-collection .price-item.price-item--sale.price-item--last.wt-product__price__final,

@@ -667,7 +667,7 @@
                 data-swiper-slide
                 data-media-id="{{ media.id }}"
                 data-model="{% if media.media_type == 'model' %}true{% endif %}"
-                class="swiper-slide dfdfdfdfd"
+                class="swiper-slide"
                 id="image-{{ forloop.index }}"
                 {% if media.media_type != 'model' %}
                 style="--slide-ratio: {{ media.preview_image.aspect_ratio }}"
@@ -680,7 +680,7 @@
                       data-pswp-width="{{ media.width }}"
                       data-pswp-height="{{ media.height }}"
                       target="_blank"
-                      tabindex="0"
+                      
                     >
                   {% endif %}
                   <img
@@ -919,10 +919,10 @@
         </ul>
 
         {% if product.media.size > 1 %}
-          <div class="swiper-button-next wt-slider__nav-btn wt-slider__nav-next wt-slider__nav-next--basic">
+          <div class="swiper-button-next wt-slider__nav-btn wt-slider__nav-next wt-slider__nav-next--basic" role="button" aria-label="Next slide">
             {% render 'icons', id: 'arrow-right' %}
           </div>
-          <div class="swiper-button-prev wt-slider__nav-btn wt-slider__nav-prev wt-slider__nav-prev--basic">
+          <div class="swiper-button-prev wt-slider__nav-btn wt-slider__nav-prev wt-slider__nav-prev--basic" role="button" aria-label="Previous slide">
             {% render 'icons', id: 'arrow-left' %}
           </div>
           <div class="swiper-scrollbar wt-slider__scrollbar wt-slider__scrollbar--featured"></div>

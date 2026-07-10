@@ -1480,7 +1480,7 @@ page-header {
 .page-header-sticky .page-header {
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 50;
   transition: transform 0.3s ease;
 }
 .page-header-sticky .page-header.hide {
@@ -2622,6 +2622,10 @@ body:not(.search-overlay-on) .wt-header--opacity.wt-header--v3 .wt-header__searc
     margin-right: calc(var(--gap, 8px) * 4);
     margin-left: calc(var(--gap, 8px) * 1);
   }
+  .wt-header--fashion .wt-header__search__field::placeholder {
+    color: #151515;
+    opacity: 1;
+  }
 }
 .wt-header--fashion-transparent {
   --color-header-background: transparent;
@@ -2872,6 +2876,15 @@ body.menu-drawer-overlay-on .page-header {
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
   animation-delay: calc(var(--time) * -1);
+}
+.wt-announcement__container--marquee.stop .wt-announcement__marquee {
+    animation-play-state: paused;
+}
+.wt-announcement__close:after {
+    content: "x";
+}
+.wt-announcement__container--marquee.stop +  .wt-announcement__close:after {
+    content: '▶';
 }
 [dir=rtl] .wt-announcement__marquee {
   animation: scroll-rtl var(--time) linear infinite;

@@ -61,8 +61,20 @@ class AnnouncementBar extends HTMLElement {
       this.announcementBar.style.transition = "transform 0.5s ease-in-out";
 
     this.closeButton = this.querySelector(".wt-announcement__close");
-    if (this.closeButton)
-      this.closeButton.addEventListener("click", this.hideForOneDay);
+    this.closeButton.setAttribute('aria-label', 'Play/stop');
+    this.closeButton.setAttribute('aria-pressed', 'true');
+    this.closeButton.setAttribute('tabindex', '0');
+
+    if (this.closeButton) {
+        this.closeButton.addEventListener("click", () => {
+            this.announcementBar.classList.toggle('stop');
+            this.closeButton.classList.toggle('active');
+            const isPlaying = this.getAttribute('aria-pressed') === 'true';
+            this.setAttribute('aria-pressed', !isPlaying);
+        });
+    }
+    //   this.closeButton.addEventListener("click", this.hideForOneDay);
+      
 
     window.addEventListener("resize", this.handleResize.bind(this));
   }

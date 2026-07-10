@@ -68,7 +68,7 @@
                 sizes: '(min-width: 1000px) 620px, 100vw',
                 width: null,
                 widths: '375, 750, 1000, 1440',
-                alt: card_alt,
+                alt: '',
                 class: card_classes
             }}
           {% elsif img %}
@@ -96,7 +96,7 @@
                 "
                 sizes="(min-width: 1000px) 620px, 100vw"
                 src="{{ img | image_url: width: 1000 }}"
-                alt="{{ card_alt }}"
+                alt=""
                 loading="{{ loading }}"
                 width="{{ img.width }}"
                 height="{{ img.height }}"
@@ -113,7 +113,7 @@
                 "
                 sizes="(min-width: 1000px) 620px, 100vw"
                 src="{{ img | image_url: width: 1000 }}"
-                alt="{{ card_alt }}"
+                alt=""
                 loading="{{ loading }}"
                 width="{{ img.width }}"
                 height="{{ img.height }}"
@@ -132,7 +132,7 @@
                 "
                 sizes="(min-width: 1000px) 620px, 100vw"
                 src="{{ img_hover | image_url: width: 1000 }}"
-                alt="{{ card_alt }}"
+                alt=""
                 loading="{{ loading }}"
                 width="{{ img_hover.width }}"
                 height="{{ img_hover.height }}"

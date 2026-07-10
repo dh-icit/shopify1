@@ -352,7 +352,7 @@ shopify-editor .shoppable-image__placeholder {
   letter-spacing: 1px;
   font-size: calc(var(--font-base-size) * 0.75);
   text-transform: uppercase;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   margin-top: calc(var(--gap, 8px) * 1);
   margin-bottom: 0;
   line-height: normal;
