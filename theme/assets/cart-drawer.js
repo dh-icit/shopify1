@@ -107,6 +107,7 @@ class CartDrawerSection extends HTMLElement {
   onToggle() {
     if (this.hasAttribute("open")) {
       this.removeAttribute("open");
+      this.setAttribute("inert", '');
       this.isOpen = false;
       this.mainTrigger.focus();
       this.temporaryHideFocusVisible();
@@ -116,6 +117,7 @@ class CartDrawerSection extends HTMLElement {
       this.restoreFocusToOpener();
     } else {
       this.setAttribute("open", "");
+      this.removeAttribute("inert", "");
       this.isOpen = true;
       this.closeButton().focus();
       this.temporaryHideFocusVisible();

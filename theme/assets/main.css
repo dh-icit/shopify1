@@ -234,6 +234,7 @@
   font-size: calc(var(--font-base-size) * 1.1);
   padding-top: calc(var(--gap, 8px) * 2.5);
   padding-bottom: calc(var(--gap, 8px) * 2.5);
+  margin-top: 0;
 }
 @media (min-width: 900px) {
   .wt-footer__title {
@@ -12782,4 +12783,24 @@ a[href="https://www.parcelwill.com/"],
 .jm-sort-filter__select[data-v-2bbaaaa5]:focus-visible,
 .jm-button--secondary[data-v-9640c170]:focus-visible {
     outline: 2px solid var(--outline-color) !important;
+}
+
+.wt-thumb-button {
+    border: none;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.wt-footer-mob {
+    display: none;
+}
+
+@media (max-width: 899px) {
+    .wt-footer {
+        display: none;
+    }
+    .wt-footer-mob {
+        display: flex;
+    }
 }

@@ -149,7 +149,10 @@ class LocalizationDrawer extends HTMLElement {
     );
 
     tabTriggers.forEach((t) =>
-      t.classList.remove("wt-localization-drawer__tab__trigger--active"),
+      {
+        t.classList.remove("wt-localization-drawer__tab__trigger--active");
+        t.setAttribute('aria-selected', 'false');
+      }
     );
     tabContents.forEach((c) => c.classList.remove("is-active"));
 
@@ -158,6 +161,7 @@ class LocalizationDrawer extends HTMLElement {
       matchingTrigger.classList.add(
         "wt-localization-drawer__tab__trigger--active",
       );
+      matchingTrigger.setAttribute('aria-selected', 'true');
     }
 
     const matchingContent = this.querySelector(
@@ -249,12 +253,15 @@ class LocalizationDrawer extends HTMLElement {
     tabTriggers.forEach((trigger) => {
       trigger.addEventListener("click", (e) => {
         e.preventDefault();
-        tabTriggers.forEach((t) =>
-          t.classList.remove("wt-localization-drawer__tab__trigger--active"),
-        );
+        tabTriggers.forEach((t) => {
+            t.classList.remove("wt-localization-drawer__tab__trigger--active");
+            t.setAttribute('aria-selected', 'false');
+        });
         tabContents.forEach((c) => c.classList.remove("is-active"));
 
         trigger.classList.add("wt-localization-drawer__tab__trigger--active");
+        trigger.setAttribute('aria-selected', 'true');
+
         const targetKey = trigger.dataset.tabTarget;
         const matchedContent = this.querySelector(
           `[data-tab-content="${targetKey}"]`,
