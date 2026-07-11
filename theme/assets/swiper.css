@@ -499,7 +499,7 @@ shopify-editor .swiper-pagination-bullet,
   display: inline-block;
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #000);
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.7);
 }
 body button.swiper-pagination-bullet,
 main button.swiper-pagination-bullet,
@@ -530,6 +530,7 @@ shopify-editor .swiper-pagination-bullet-active,
 .wt-cart .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  transform: scale(1.2);
 }
 body .swiper-pagination-vertical.swiper-pagination-bullets,
 body .swiper-vertical > .swiper-pagination-bullets,

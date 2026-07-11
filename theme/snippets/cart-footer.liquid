@@ -54,6 +54,7 @@
       id="CartDrawer-Checkout"
       class="btn-checkout wt-cart__cta"
       name="checkout"
+      role="link"
       form="CartDrawer-Form"
       {% if cart == empty %}
         disabled
@@ -73,6 +74,7 @@
       id="CartDrawer-Checkout"
       class="btn-checkout wt-cart__cta"
       name="checkout"
+      role="link"
       form="CartDrawer-Form"
       {% if cart == empty %}
         disabled
@@ -86,6 +88,7 @@
     </button>
     <div class="wt-featured-collection__button-container wt-button__container">
       <button
+        role="link"
         aria-label="{{ 'aria-label.featured-collection' | t }}"
         class="wt-cart__show-cart hero__button--link"
         onclick='location.href="{{ routes.cart_url }}"'
