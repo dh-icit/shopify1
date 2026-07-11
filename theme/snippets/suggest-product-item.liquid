@@ -1,20 +1,23 @@
-<a href="{{ url }}" class="suggest-item">
+<div class="suggest-item">
   {%- if product.featured_media != blank -%}
-    <figure class="wt-cart__item__thumb suggest-item__thumb">
-      <img
-        src="{{ featured_media | image_url: width: 150 }}"
-        alt="{{ featured_media.alt | escape }}"
-        loading="lazy"
-      >
-    </figure>
+    <a href="{{ url }}">
+      <figure class="wt-cart__item__thumb suggest-item__thumb">
+        <img
+          src="{{ featured_media | image_url: width: 150 }}"
+          alt="{{ featured_media.alt | escape }}"
+          loading="lazy"
+        >
+      </figure>
+    </a>
   {%- endif -%}
   <div class="wt-cart__item__body suggest-item__body">
     <div class="wt-cart__item__data">
       {%- if settings.show_product_vendor -%}
         <div class="wt-cart__item__vendor">{{ product.vendor }}</div>
       {% endif %}
-      <h3 class="wt-cart__item__name">{{ name }}</h3>
-
+      <a href="{{ url }}">
+        <h3 class="wt-cart__item__name">{{ name }}</h3>
+      </a>
       {%- if settings.show_product_price -%}
         <div class="wt-cart__item__price">
           {% render 'price', product: product, use_variant: true, show_badges: false %}
@@ -27,4 +30,4 @@
       {% endif %}
     </div>
   </div>
-</a>
+</div>

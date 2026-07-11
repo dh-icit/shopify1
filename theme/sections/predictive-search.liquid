@@ -11,9 +11,9 @@
   >
     {%- if predictive_search.resources.products.size > 0 -%}
       <div class="search-result-products">
-        <div id="predictive-search-products" class="search-result__title">
+        <h3 id="predictive-search-products" class="search-result__title">
           {{ 'templates.search.titles.products' | t }}
-        </div>
+        </h3>
         <ul
           id="predictive-search-results-list"
           class="search-result-list"
@@ -55,7 +55,7 @@
                     "
                     sizes="(min-width: 50px) 50px, 100vw"
                     src="{{ product.featured_media | image_url: width: 50 }}"
-                    alt="{{ product.featured_media.alt }}"
+                    alt=""
                     loading="lazy"
                     width="50"
                     height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio | ceil }}"
@@ -103,7 +103,7 @@
     -%}
       <div class="search-result-pages">
         {% if predictive_search.resources.queries.size > 0 and settings.enable_suggestions %}
-          <div class="search-result__title">{{ 'templates.search.titles.suggestions' | t }}</div>
+          <h3 class="search-result__title">{{ 'templates.search.titles.suggestions' | t }}</h3>
           <ul class="search-result-pages__list">
             {%- for suggestion in predictive_search.resources.queries limit: 3 -%}
               <li class="search-result-pages__item">
@@ -113,7 +113,7 @@
           </ul>
         {% endif %}
         {% if predictive_search.resources.pages.size > 0 %}
-          <div class="search-result__title">{{ 'templates.search.titles.pages' | t }}</div>
+          <h3 class="search-result__title">{{ 'templates.search.titles.pages' | t }}</h3>
           <ul class="search-result-pages__list">
             {%- for page in predictive_search.resources.pages limit: 3 -%}
               <li class="search-result-pages__item">
@@ -124,7 +124,7 @@
         {% endif %}
 
         {% if predictive_search.resources.articles.size > 0 %}
-          <div class="search-result__title">{{ 'templates.search.titles.articles' | t }}</div>
+          <h3 class="search-result__title">{{ 'templates.search.titles.articles' | t }}</h3>
           <ul class="search-result-pages__list">
             {%- for post in predictive_search.resources.articles limit: 3 -%}
               <li class="search-result-pages__item">
@@ -135,7 +135,7 @@
         {% endif %}
 
         {% if predictive_search.resources.collections.size > 0 %}
-          <div class="search-result__title">{{ 'templates.search.titles.collections' | t }}</div>
+          <h3 class="search-result__title">{{ 'templates.search.titles.collections' | t }}</h3>
           <ul class="search-result-pages__list">
             {%- for collection in predictive_search.resources.collections limit: 3 -%}
               <li class="search-result-pages__item">

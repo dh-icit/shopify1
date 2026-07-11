@@ -150,6 +150,7 @@
           <div class="counter">
             <button
               aria-label="{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}"
+              title="{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}"
               type="button"
               tabindex="{{ tab_index }}"
               class="js-counter-decrease js-counter-button"
@@ -173,12 +174,14 @@
               step="{{ item.variant.quantity_rule.increment }}"
               {% # theme-check-enable %}
               aria-label="Counter quantity"
+              title="Counter quantity"
               id="Drawer-quantity-{{ item.index | plus: 1 }}"
               data-index="{{ item.index | plus: 1 }}"
               tabindex="{{ tab_index }}"
             >
             <button
               aria-label="{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}"
+              title="{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}"
               type="button"
               class="js-counter-increase js-counter-button"
               tabindex="{{ tab_index }}"
@@ -199,6 +202,7 @@
             class="wt-cart__item__remove wt-cart__item__remove--amount"
             href="#"
             aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
+            title="{{ 'sections.cart.remove_title' | t: title: item.title }}"
             role="button"
             tabindex="{{ tab_index }}"
           >

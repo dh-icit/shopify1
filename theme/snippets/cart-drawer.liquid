@@ -24,16 +24,17 @@
       tabindex="-1"
     >
       <div class="wt-cart__drawer__header">
-        <div id="CartDrawer-TotalQty" class="wt-drawer__title__text">
+        <h3 id="CartDrawer-TotalQty" class="wt-drawer__title__text">
           {{ 'sections.cart.title' | t }}
           {% if cart.item_count > 0 %}
             ({{ cart.item_count }})
           {% endif %}
-        </div>
+        </h3>
         <a
           class="wt-cart__drawer__close wt-cart__drawer__close--button"
           role="button"
           aria-label="{{ 'accessibility.close' | t }}"
+          title="{{ 'accessibility.close' | t }}"
           tabindex="-1"
           href="#"
         >

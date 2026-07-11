@@ -42,12 +42,12 @@
   <div class="wt-cart__cross-sell {% if settings.cross_sells_collapsed %}wt-cart__cross-sell--collapsed{% endif %}">
     <p class="wt-cart__cross-sell__heading">
       {{ settings.heading_cross_sells }}
-      <span
+      <button
         class="wt-cart__cross-sell__toggle"
         onclick="this.closest('.wt-cart__cross-sell').classList.toggle('wt-cart__cross-sell--collapsed')"
-      >
+       tabindex="0" title="Toggle related products" aria-label="Toggle related products">
         {% render 'icons', id: 'arrow-down' %}
-      </span>
+      </button>
     </p>
 
     <div class="wt-cart__cross-sell__products">
