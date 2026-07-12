@@ -153,6 +153,7 @@
               type="button"
               tabindex="{{ tab_index }}"
               class="js-counter-decrease js-counter-button"
+              title="{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}"
             >
               <span class="visually-hidden">
                 {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
@@ -179,6 +180,7 @@
             >
             <button
               aria-label="{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}"
+              title="{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}"
               type="button"
               class="js-counter-increase js-counter-button"
               tabindex="{{ tab_index }}"

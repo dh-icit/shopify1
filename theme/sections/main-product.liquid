@@ -919,10 +919,10 @@
         </ul>
 
         {% if product.media.size > 1 %}
-          <div class="swiper-button-next wt-slider__nav-btn wt-slider__nav-next wt-slider__nav-next--basic" role="button" aria-label="Next slide">
+          <div class="swiper-button-next wt-slider__nav-btn wt-slider__nav-next wt-slider__nav-next--basic" role="button" aria-label="Next slide" title="Next slide">
             {% render 'icons', id: 'arrow-right' %}
           </div>
-          <div class="swiper-button-prev wt-slider__nav-btn wt-slider__nav-prev wt-slider__nav-prev--basic" role="button" aria-label="Previous slide">
+          <div class="swiper-button-prev wt-slider__nav-btn wt-slider__nav-prev wt-slider__nav-prev--basic" role="button" aria-label="Previous slide" title="Previous slide">
             {% render 'icons', id: 'arrow-left' %}
           </div>
           <div class="swiper-scrollbar wt-slider__scrollbar wt-slider__scrollbar--featured"></div>
@@ -1871,11 +1871,13 @@
                             <variant-dropdown>
                               <button
                                 {% comment %} aria-label="{{ 'aria-label.main-product-select-option' | t }}" {% endcomment %}
-                                class="
+                                class=" ss
                                   wt-button wt-product__option__dropdown
                                     {% unless current_value.available %} wt-product__option__dropdown--unavailable {% endunless %}
                                   {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}
                                 "
+                                aria-label="{{ option.selected_value }}"
+                                role="combobox"
                               >
                                 {% if option.selected_value == value %}
                                   <span>{{ option.selected_value }}</span>
@@ -2115,6 +2117,13 @@
                       >
                       <button
                         aria-label="
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        "
+                        title="
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
                           {%- else -%}

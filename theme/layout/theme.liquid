@@ -56,6 +56,7 @@
     {{ 'critical.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'variant-dropdown.js' | asset_url }}" defer="defer"></script>
 
     <link rel="preload" href="{{ 'main.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ 'main.css' | asset_url }}"></noscript>
