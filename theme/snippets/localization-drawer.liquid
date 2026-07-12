@@ -41,13 +41,14 @@
 <localization-drawer class="wt-localization-drawer">
   <div class="wt-localization-drawer__inner">
     <header class="wt-localization-drawer__header">
-      <div class="wt-drawer__title__text">{{ 'sections.localization_drawer.drawer_title' | t }}</div>
+      <h3 class="wt-drawer__title__text">{{ 'sections.localization_drawer.drawer_title' | t }}</h3>
       <a
         class="wt-localization-drawer__close"
         role="button"
         aria-label="{{ 'accessibility.close' | t }}"
         tabindex="-1"
         href="#"
+        title="{{ 'accessibility.close' | t }}"
       >
         {% render 'icons', id: 'close', icon_class: 'wt-cart__drawer__close' %}
       </a>
@@ -63,6 +64,9 @@
                   href="#"
                   class="wt-localization-drawer__tab__trigger wt-localization-drawer__tab__trigger--active"
                   data-tab-target="country"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="data-tab-content-country"
                 >
                   {{ 'sections.localization_drawer.country_label' | t }}
                 </a>
@@ -74,6 +78,9 @@
                   href="#"
                   class="wt-localization-drawer__tab__trigger"
                   data-tab-target="language"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="data-tab-content-language"
                 >
                   {{ 'sections.localization_drawer.language_label' | t }}
                 </a>
@@ -89,6 +96,7 @@
         <div
           class="wt-localization-drawer__tab__content is-active"
           data-tab-content="country"
+          id="data-tab-content-country"
         >
           <div class="wt-localization-drawer__tab__content-header">
             <div class="wt-localization-drawer__current-country">
@@ -166,6 +174,7 @@
         <div
           class="wt-localization-drawer__tab__content"
           data-tab-content="language"
+          id="data-tab-content-language"
         >
           <localization-form>
             {% form 'localization', id: 'DrawerLanguageForm', class: 'localization-form' %}

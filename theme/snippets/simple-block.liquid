@@ -1,3 +1,5 @@
+
+
 {% if blocks %}
   {%- for block in blocks -%}
     {%- case block.type -%}
@@ -39,12 +41,12 @@
                 {{ block.settings.heading_richtext }}
           </div>
           {% else %}
-           <h2
+           <p
               data-block-id="{{ block.id }}"
               class="{% if prefix %}{{ prefix }}{% else %}block{% endif %}__title {% if block.settings.disable_on_mobile %}{% if prefix %}{{ prefix }}{% else %}block{% endif %}__title--mobile{% endif %} {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
               >
                 {{ block.settings.heading | escape | newline_to_br }}
-            </h2>
+            </p>
           {% endif %}
         {% endif %}
         {% if block.settings.subheading %}

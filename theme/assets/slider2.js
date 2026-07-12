@@ -336,7 +336,7 @@ if (!customElements.get("slideshow-section")) {
           pagination: {
             el: ".swiper-pagination",
             renderBullet(index, className) {
-              return `<span role="button" class="${className} swiper-pagination-bullet--svg-animation"><svg width="20" height="20" viewBox="0 0 28 28" aria-label="Go to ${index}"><circle class="svg__circle" cx="14" cy="14" r="12" fill="none" stroke-width="2"></circle><circle class="svg__circle-inner" cx="14" cy="14" r="5" stroke-width="2"></circle></svg></span>`;
+              return `<span title="Go to ${index}" role="button" class="${className} swiper-pagination-bullet--svg-animation"><svg width="20" height="20" viewBox="0 0 28 28" aria-label="Go to ${index}"><circle class="svg__circle" cx="14" cy="14" r="12" fill="none" stroke-width="2"></circle><circle class="svg__circle-inner" cx="14" cy="14" r="5" stroke-width="2"></circle></svg></span>`;
             },
           },
           navigation: {

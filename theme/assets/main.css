@@ -234,6 +234,7 @@
   font-size: calc(var(--font-base-size) * 1.1);
   padding-top: calc(var(--gap, 8px) * 2.5);
   padding-bottom: calc(var(--gap, 8px) * 2.5);
+  margin-top: 0;
 }
 @media (min-width: 900px) {
   .wt-footer__title {
@@ -797,7 +798,7 @@ button[disabled],
   display: inline-flex;
   position: relative;
   letter-spacing: 2px;
-  color: #cf7e07;
+  color: var(--color-star-rating);
 }
 .wt-rating__base, .wt-rating__value {
   display: flex;
@@ -1042,9 +1043,6 @@ button[disabled],
   /* background: rgba(0, 0, 0, 1);
   padding: 3px 10px;
   border-radius: 18px; */
-}
-.search-result-wrapper .price-item.price-item--sale.price-item--last.wt-product__price__final {
-  color: #000;
 }
 .shoppable-product-card .price-item.price-item--sale.price-item--last.wt-product__price__final {
     color: var(--color-sale-price);
@@ -2504,9 +2502,9 @@ body.no-focus-visible .form-checkbox__input:focus-visible ~ .input-decorator {
   width: 100%;
 }
 .form__success-field {
-  color: #026E02;
+  color: var(--color-success-text);
   background-color: var(--color-success-background);
-  border: 1px solid #026E02;
+  border: 1px solid var(--color-success-border);
   padding: calc(var(--gap, 8px) * 1) calc(var(--gap, 8px) * 1.5);
   line-height: var(--font-base-line-height, normal);
   border-radius: var(--border-radius-button);
@@ -5811,9 +5809,6 @@ body .wt-filter__close.wt-filter__close {
   width: 28px;
   height: 28px;
   cursor: pointer;
-  padding: 0;
-  background: transparent;
-  border: none;
 }
 .wt-cart__cross-sell__toggle .svg-icon {
   transform-origin: center;
@@ -6182,10 +6177,10 @@ body .wt-filter__close.wt-filter__close {
   margin-left: auto;
 }
 .wt-cart__item__price-wrapper .price--end-sale {
-  color: #e50000;
+  color: var(--color-sale-price);
 }
 .wt-cart__item .price--end-sale {
-  color: #e50000;
+  color: var(--color-sale-price);
 }
 .wt-cart__footer {
   margin-left: calc(var(--gap, 8px) * -2);
@@ -7798,8 +7793,9 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
 }
 @media (hover: hover) {
   .wt-product__add-to-cart_form .js-add-to-cart:hover {
-    background: #1CB109;
+    background: var(--color-button-primary-background-hover);
     border-color: transparent;
+    color: var(--color-button-primary-text-hover);
   }
 }
 .wt-product__add-to-cart_form .js-add-to-cart.loading {
@@ -12778,28 +12774,33 @@ a[href="https://www.parcelwill.com/"],
   opacity: 1 !important;
 }
 
-.jm-pagination-controls__button:hover {
-  color: #fff !important;
+.govx-id-page-wrapper .shopify-payment-button__button--unbranded {
+    padding: 1em 2em !important;
+    display: inline-block !important;
 }
-.jm-text {
-  color: #000 !important;
+
+.jm-review-widget-minimal-header__action-buttons .jm-button:focus-visible,
+.jm-sort-filter__select[data-v-2bbaaaa5]:focus-visible,
+.jm-button--secondary[data-v-9640c170]:focus-visible {
+    outline: 2px solid var(--outline-color) !important;
 }
-.jdgm-write-review-modal__field-input::placeholder {
-  color: #000 !important;
+
+.wt-thumb-button {
+    border: none;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
 }
-.jdgm-write-review-modal .jdgm-write-review-modal__field-error {
-  color: #e31212 !important;
+
+.wt-footer-mob {
+    display: none;
 }
-.jdgm-write-review-modal .jdgm-write-review-modal__checkbox-custom {
-  border: 2px solid #000 !important;
-}
-.js-counter-button .svg-icon path,
-.js-counter-button .svg-icon rect {
-  fill: #000 !important;
-}
-.first.focused .handle {
-  border: 2px solid #000 !important;
-}
-.wt-drawer__close {
-  padding: 10px;
+
+@media (max-width: 899px) {
+    .wt-footer {
+        display: none;
+    }
+    .wt-footer-mob {
+        display: flex;
+    }
 }

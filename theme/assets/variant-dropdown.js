@@ -29,6 +29,8 @@ if (!customElements.get("variant-dropdown")) {
         this.classOpen = "open";
         this.classHidden = "hidden";
         this.classBodyOverlayed = "variant-dropdown-page-overlay";
+
+        this.connectedCallback();
       }
 
       connectedCallback() {
@@ -36,6 +38,7 @@ if (!customElements.get("variant-dropdown")) {
       }
 
       openDrawer() {
+        console.log('open');
         this.dropdownIcon.classList.add(this.classOpen);
         this.container.classList.add(this.classOpen);
         this.overlay.classList.remove(this.classHidden);
@@ -46,6 +49,7 @@ if (!customElements.get("variant-dropdown")) {
             this.featuredProductSectionActiveClass,
           );
         }
+        console.log('openDrawer');
         this._handleTabindex();
         document.addEventListener("click", this.handleInteractionOutside);
       }
@@ -81,6 +85,7 @@ if (!customElements.get("variant-dropdown")) {
       }
 
       addEventListeners() {
+        console.log('wt-product__option__dropdown');
         this.dropdownButton.addEventListener("click", (event) => {
           event.stopPropagation();
           this.openDrawer();
@@ -166,6 +171,7 @@ if (!customElements.get("variant-dropdown")) {
           this.handleInteractionOutside.bind(this);
 
         this._handleTabindex();
+        console.log('before addEventListeners');
         this.addEventListeners();
       }
     },

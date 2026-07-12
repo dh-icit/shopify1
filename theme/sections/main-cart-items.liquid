@@ -20,12 +20,12 @@
           <header class="wt-cart__header {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
             {%- if cart != empty -%}
               <div class="wt-cart__header__action">
-                <h2 class="wt-cart__title">
+                <h1 class="wt-cart__title">
                   {{ 'sections.cart.title' | t }}
                   {% if cart.item_count > 0 %}
                     ({{ cart.item_count }})
                   {% endif %}
-                </h2>
+                </h1>
               </div>
 
               {% if settings.enable_free_shipping_bar %}

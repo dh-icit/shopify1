@@ -71,6 +71,8 @@ if (!customElements.get("product-form")) {
         formData.append("sections_url", window.location.pathname);
         config.body = formData;
 
+        
+
         fetch(`${routes.cart_add_url}`, config)
           .then((response) => response.json())
           .then((response) => {
@@ -174,7 +176,11 @@ if (!customElements.get("product-form")) {
             // delay button loading
             setTimeout(() => {
               this.disableLoadingInButton();
+              document.querySelector("#CartDrawer-Checkout").focus();
+                console.log(document.activeElement);
             }, 200);
+
+            
           });
       }
 

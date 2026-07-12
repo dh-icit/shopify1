@@ -63,7 +63,7 @@
                   </div>
                 </div>
               {%- elsif form.errors -%}
-                <div class="form__message">
+                <div class="form__message" role="alert" aria-atomic="true">
                   <div class="form__error-field">
                     {{ form.errors.translated_fields.email | capitalize }}
                     {{ form.errors.messages.email }}
@@ -112,6 +112,7 @@
                   id="ContactFormEmail-{{ section.id }}"
                   class="form__field__input"
                   placeholder=" "
+                  aria-required="true"
                   value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                 >
                 <span class="form__field__label">{{ 'templates.contact.form.email' | t }}* </span>

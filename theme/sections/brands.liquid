@@ -148,12 +148,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <a
-                  href="{{ block.settings.link | default: '#' }}"
-                  class="wt-brands__link"
-                  aria-label="{{ 'aria-label.brands-url' | t }}"
-                  
-                >
+                
                   {% if block.settings.desktop_image != blank %}
                     {% assign alt_text = block.settings.desktop_image.alt | escape | default: "" %}
                     {{
@@ -172,7 +167,7 @@
                       {{ 'collection-apparel-1' | placeholder_svg_tag: 'wt-brands__image--placeholder' }}
                     </div>
                   {% endif %}
-                </a>
+                
               </div>
             </div>
           {% endfor %}
