@@ -57,7 +57,13 @@
       {% break %}
     {%- endfor -%}
 {%- endfor -%}
-
+<h1 class="collection-hero__title" style="text-align: center;">
+  {%- if collection.title -%}
+    {{ collection.title | escape }}
+  {%- else -%}
+    {{ page_title | escape }}
+  {%- endif -%}
+</h1>
 <div data-section-id="{{ section.id }}" class="{{ section_variant }}">
   <collection-section
     class="collection{% if section.settings.filter_position == "always" %} collection--with-aside{% endif %}"

@@ -140,6 +140,7 @@ class QuantityCounter extends HTMLElement {
   constructor() {
     super();
     this.changeEvent = new Event("change", { bubbles: true });
+    this.alertAsse = document.querySelector('.cart__drawer_asse');
   }
 
   connectedCallback() {
@@ -158,6 +159,7 @@ class QuantityCounter extends HTMLElement {
     const currentValue = parseInt(this.counterEl.value);
     if (currentValue < this.max) {
       this.updateValue(currentValue + 1);
+    //   this.alertAsse.innerHTML = "Product quantinty increase.";
     }
   }
 
@@ -166,12 +168,12 @@ class QuantityCounter extends HTMLElement {
     if (this.dataset.cart) this.min = 0;
     if (currentValue > this.min) {
       this.updateValue(currentValue - 1);
+    //   this.alertAsse.innerHTML = "Product quantinty decrease.";
     }
   }
 
   updateValue(value) {
     this.counterEl.value = value;
-
     this.counterEl.dispatchEvent(this.changeEvent);
   }
 }
@@ -553,6 +555,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const error = document.querySelector('.form__error-field');
     if(error ) {
         document.querySelector('.form__field--email input').focus();
+        if(error.innerHTML.length > 0) {
+            document.querySelector('.form__message_asse').innerHTML = error.innerHTML;
+        }
     }
 
     const button = document.querySelector('#shopify-subscription-policy-button');
@@ -603,6 +608,12 @@ document.addEventListener("DOMContentLoaded", () => {
             form.submit();
         });
     }
+
+    setTimeout(function() {
+        const teaser_badge = document.querySelector('.Teaser-pointer-Hn1zd');
+        if(teaser_badge)
+            teaser_badge.setAttribute('title', "50% of code");
+    }, 3000);
 
 });
 

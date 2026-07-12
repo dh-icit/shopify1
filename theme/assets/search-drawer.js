@@ -45,6 +45,7 @@ class DrawerSearchSection extends HTMLElement {
 
     this.suggestionMenuContent = this.querySelector(".search-result-top").cloneNode(true);
     this.timeOut = null;
+    this.assertive = document.querySelector('.search-result-wrapper_sse');
     this.init();
   }
 
@@ -209,7 +210,7 @@ class DrawerSearchSection extends HTMLElement {
 
   onChange() {
     const searchTerm = this.getQuery();
-
+    console.log('onChange');
     if (searchTerm.length) {
       this.getSearchResults(searchTerm);
       this.removeAttribute("empty");
@@ -277,11 +278,23 @@ class DrawerSearchSection extends HTMLElement {
   }
 
   renderSearchResults(resultsMarkup) {
+    // console.log(resultsMarkup);
     this.predictiveSearchResults.innerHTML = resultsMarkup;
 
     this.setAttribute("results", true);
-    this.querySelector('.search-result-list').setAttribute("aria-expanded", true);
+    let list = this.querySelector('.search-result-list');
+    if(list)
+        list.setAttribute("aria-expanded", true);
 
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(resultsMarkup, 'text/html');
+    const allH3 = doc.querySelectorAll('.wt-cart__item__name');
+
+    this.assertive.innerHTML = '';
+
+    allH3.forEach(h3 => {
+        this.assertive.appendChild(h3.cloneNode(true));
+    });
 
     this.setLiveRegionResults();
   }
@@ -300,6 +313,7 @@ class DrawerSearchSection extends HTMLElement {
     this.setAttribute("empty", true);
     this.statusElement.innerHTML = this.suggestionMenuContent.innerHTML || '';
     this.querySelector('.search-result-list').setAttribute("aria-expanded", false);
+    this.assertive.innerHTML = '';
     clearTimeout(this.timeOut);
     setTimeout(() => {
       this.statusElement.removeAttribute("aria-hidden");

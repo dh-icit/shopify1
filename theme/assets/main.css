@@ -1039,7 +1039,7 @@ button[disabled],
 
 .price-item.price-item--sale.price-item--last.wt-product__price__final {
   color: var(--color-sale-price);
-  color: #fff;
+  /* color: #fff; */
   /* background: rgba(0, 0, 0, 1);
   padding: 3px 10px;
   border-radius: 18px; */
@@ -12802,5 +12802,14 @@ a[href="https://www.parcelwill.com/"],
     }
     .wt-footer-mob {
         display: flex;
+    }
+}
+
+@media(max-width: 1798px)  {
+    .kl-teaser-Ryhnfn {
+        margin-bottom: 0 !important;
+    }
+    .wt-footer {
+        padding-bottom: 40px;
     }
 }

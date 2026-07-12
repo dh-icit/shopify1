@@ -63,7 +63,9 @@
                   </div>
                 </div>
               {%- elsif form.errors -%}
-                <div class="form__message" role="alert" aria-atomic="true">
+                <div class="form__message_asse" aria-live="assertive" role="alert"></div>
+                <div class="form__message">
+                
                   <div class="form__error-field">
                     {{ form.errors.translated_fields.email | capitalize }}
                     {{ form.errors.messages.email }}

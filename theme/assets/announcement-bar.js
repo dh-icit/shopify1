@@ -71,6 +71,9 @@ class AnnouncementBar extends HTMLElement {
             this.closeButton.classList.toggle('active');
             const isPlaying = this.getAttribute('aria-pressed') === 'true';
             this.setAttribute('aria-pressed', !isPlaying);
+            let asse = document.querySelector('.announcement__marquee_asse');
+            if(asse)
+                asse.innerHTML = 'announcement text scrolling ' + ( isPlaying ? 'start' : 'stop' );
         });
     }
     //   this.closeButton.addEventListener("click", this.hideForOneDay);

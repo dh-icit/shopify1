@@ -85,12 +85,15 @@
 
     {% if section.settings.marquee == true %}
       <div class="wt-announcement__marquee">
+        <div aria-live="assertive" role="alert" class="announcement__marquee_asse"></div>
+        {%- assign is_first_block = true -%}
         {% for i in (1..multiply) %}
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'announcement' -%}
                 <div
                   class="wt-announcement__body wt-announcement__text"
+                  {% unless is_first_block %}aria-hidden="true"{% endunless %}
                   {{ block.shopify_attributes }}
                 >
                   {%- if block.settings.text != blank -%}
@@ -104,6 +107,7 @@
                     {%- endif -%}
                   {%- endif -%}
                 </div>
+                {%- assign is_first_block = false -%}
             {%- endcase -%}
           {%- endfor -%}
         {% endfor %}
