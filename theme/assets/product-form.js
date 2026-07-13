@@ -23,6 +23,7 @@ if (!customElements.get("product-form")) {
         this.handleErrorMessage = this.handleErrorMessage.bind(this);
         this.redirectAfterSubmit = this.redirectAfterSubmit.bind(this);
         this.disableLoadingInButton = this.disableLoadingInButton.bind(this);
+        this.asse = document.querySelector('.cart__drawer_asse');
       }
 
       closeComplementaryProduct() {
@@ -43,6 +44,7 @@ if (!customElements.get("product-form")) {
 
       onSubmitHandler(evt) {
         evt.preventDefault();
+       
         if (this.submitButton.getAttribute("aria-disabled") === "true") return;
 
         this.handleErrorMessage();
@@ -89,6 +91,7 @@ if (!customElements.get("product-form")) {
               const soldOutMessage =
                 this.submitButton.querySelector(".sold-out-message");
 
+                
               this.dispatchEvent(
                 new CustomEvent("cart-drawer:refresh", {
                   detail: { response: response },
@@ -140,6 +143,8 @@ if (!customElements.get("product-form")) {
             }
           })
           .finally(() => {
+            this.asse.innerHTML = 'Product added to cart.';
+                        
             if (this.cart && this.cart.classList.contains("is-empty"))
               this.cart.classList.remove("is-empty");
             this.submitButton.removeAttribute("aria-disabled");
@@ -171,13 +176,15 @@ if (!customElements.get("product-form")) {
               );
               document.body.classList.remove("quick-buy-page-overlay");
               this.loader.classList.remove("hidden");
+              
             }
 
             // delay button loading
+            
             setTimeout(() => {
               this.disableLoadingInButton();
               document.querySelector("#CartDrawer-Checkout").focus();
-                console.log(document.activeElement);
+                
             }, 200);
 
             

@@ -81,7 +81,7 @@ class CartDrawerSection extends HTMLElement {
 
     // Wait one frame so DOM/classes settle after closing
     requestAnimationFrame(() => {
-      el.focus?.();
+    //   el.focus?.();
     });
   }
 
@@ -105,11 +105,13 @@ class CartDrawerSection extends HTMLElement {
   }
 
   onToggle() {
+    console.log('cart-drawer: onToggle');
     if (this.hasAttribute("open")) {
       this.removeAttribute("open");
       this.setAttribute("inert", '');
       this.isOpen = false;
       this.mainTrigger.focus();
+      console.log(this.mainTrigger);
       this.temporaryHideFocusVisible();
       setTabindex(this.toggleEelements(), "-1");
 
@@ -120,6 +122,7 @@ class CartDrawerSection extends HTMLElement {
       this.removeAttribute("inert", "");
       this.isOpen = true;
       this.closeButton().focus();
+      console.log(this.closeButton());
       this.temporaryHideFocusVisible();
       setTabindex(this.toggleEelements(), "0");
     }
@@ -157,9 +160,11 @@ class CartDrawerSection extends HTMLElement {
       if (isTabPressed) {
         if (e.shiftKey && document.activeElement === first) {
           last.focus();
+          console.log(' last focus');
           e.preventDefault();
         } else if (!e.shiftKey && document.activeElement === last) {
-          first.focus();
+            console.log(' first focus');
+            first.focus();
           e.preventDefault();
         }
       }

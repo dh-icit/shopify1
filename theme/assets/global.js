@@ -140,7 +140,7 @@ class QuantityCounter extends HTMLElement {
   constructor() {
     super();
     this.changeEvent = new Event("change", { bubbles: true });
-    this.alertAsse = document.querySelector('.cart__drawer_asse');
+    
   }
 
   connectedCallback() {

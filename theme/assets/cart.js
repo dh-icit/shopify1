@@ -22,6 +22,8 @@ class CartItems extends HTMLElement {
       document.getElementById("shopping-cart-line-item-status") ||
       document.getElementById("CartDrawer-LineItemStatus");
 
+    this.alertAsse = document.querySelector('.cart__drawer_asse');
+
     const debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, ON_CHANGE_DEBOUNCE_TIMER);
@@ -95,7 +97,7 @@ class CartItems extends HTMLElement {
 
   updateQuantity(line, quantity, name) {
     this.enableLoading(line);
-
+    this.alertAsse.innerHTML = '';
     const body = JSON.stringify({
       line,
       quantity,
@@ -165,7 +167,7 @@ class CartItems extends HTMLElement {
                     ) || "";
                     
             });
-
+            
             document.querySelector("#CartDrawer-Checkout").focus();
         }        
 
@@ -187,6 +189,7 @@ class CartItems extends HTMLElement {
           }
         }
         this.updateLiveRegions(line, message);
+        this.alertAsse.innerHTML = "Product quantinty changed.";
 
         // const lineItem =
         //   document.getElementById(`CartItem-${line}`) ||
@@ -260,7 +263,7 @@ class CartItems extends HTMLElement {
       overlay.classList.remove("hidden"),
     );
 
-    document.activeElement.blur();
+    // document.activeElement.blur();
     this.lineItemStatusElement.setAttribute("aria-hidden", false);
   }
 

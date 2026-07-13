@@ -624,6 +624,7 @@ button,
   cursor: pointer;
   transition: background 0.3s ease-in, color 0.3s ease-in;
 }
+
 @media (hover: hover) {
   button:hover,
   .wt-button:hover {
@@ -8049,6 +8050,9 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
   opacity: 1;
   visibility: visible;
 }
+.wt-product__sticky-buy--show .wt-button--full-width {
+    max-width: 70%;
+}
 .wt-product__sticky-buy--show svg {
   margin-right: 8px;
 }
@@ -8492,6 +8496,10 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
 .wt-product .wt-collapse__target__content > ul:first-child > li:first-child,
 .wt-product .wt-collapse__target__content > ol:first-child > li:first-child {
   margin-top: 0;
+}
+.wt-collapse__target__content ul {
+    list-style-type: none !important;
+    padding-left: 0;
 }
 .wt-product .wt-collapse__trigger--active + .wt-collapse__target {
   grid-template-rows: 1fr;
