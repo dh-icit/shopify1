@@ -1,2 +1,7 @@
-
+button.wt-cart__cross-sell__toggle {
+    background: transparent !important;
+    border: none !important;
+    color: #000 !important;
+    padding: 0 !important;
+}
     

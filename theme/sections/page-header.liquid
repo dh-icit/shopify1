@@ -161,7 +161,7 @@ myDiv.setAttribute('role', 'banner');
         {%- if section.settings.teaser_menu != blank -%}
           {% assign highlight_names_arr = highlight_names | split: '|||' %}
           {% assign highlight_ids_arr = highlight_block_ids | split: '|||' %}
-          <ul class="wt-header__nav-teaser__list" tabindex="0" aria-label="teaser-nav">
+          <ul class="wt-header__nav-teaser__list" aria-label="teaser-nav">
             {% assign teaser_menu_limit = section.settings.teaser_menu_limit %}
             {%- for link in section.settings.teaser_menu.links limit: teaser_menu_limit -%}
               {% if forloop.index <= 5 %}
@@ -299,9 +299,9 @@ myDiv.setAttribute('role', 'banner');
         {%- endif -%}
       </div>
       {%- if request.page_type == 'index' -%}
-        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo" tabindex="0">
+        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo" >
       {% else %}
-        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo" tabindex="0">
+        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo">
       {% endif %}
 
       <a
@@ -315,6 +315,7 @@ myDiv.setAttribute('role', 'banner');
             --logo-width: auto;
             --logo-width-desk: auto;
           {% endif %}
+          tabindex="0"
         "
       >
         {%- if section.settings.logo != blank or section.settings.transparent_logo != blank -%}
