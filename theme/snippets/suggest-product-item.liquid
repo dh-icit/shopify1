@@ -1,6 +1,6 @@
 <div class="suggest-item">
   {%- if product.featured_media != blank -%}
-    <a href="{{ url }}">
+    <a href="{{ url }}" tabindex="0" title="{{ featured_media.alt | escape }}">
       <figure class="wt-cart__item__thumb suggest-item__thumb">
         <img
           src="{{ featured_media | image_url: width: 150 }}"

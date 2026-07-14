@@ -363,7 +363,7 @@
                   target="_blank" rel="noreferrer noopener"
                 {% endif %}
                 tabindex="0"
-                aria-label="{{ button_label }}"
+                aria-label="{{ button_label }} {{ heading | newline_to_br }}"
                 class="hero__button {% if button_disable_on_mobile %}hero__button--mobile {% endif %} hero__button--primary {% if button_select != 'primary' %} hero__button--secondary{% endif %}{% if button_select == 'link' %} hero__button--link{% endif %}"
               >
                 <span>{{ button_label }}</span>
