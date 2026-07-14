@@ -182,7 +182,7 @@
         "promo_pbxaKi": {
           "type": "promo",
           "settings": {
-            "content": "<p>💰 Use code <strong>NEWBOX</strong> for $20 off your first box!</p>",
+            "content": "<p>💰 Use code <strong>NEWBOX</strong> for 50% off your first box!</p>",
             "text_alignment": "left",
             "color-body-text": "#ffffff",
             "background_color": "#151515"
