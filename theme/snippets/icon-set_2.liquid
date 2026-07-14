@@ -23,7 +23,7 @@
     {% assign icon_name = icon_name | t %}
 
     {% capture icon_title %}
-        <title>{{ 'general.icons.icon_title' | t: name: icon_name }}</title>
+        
     {% endcapture %}
 
     {% render 'icon-common', id: id, icon_id: icon_id, icon_class: icon_class, url: url, link_class: link_class, shared_svg_attrs: shared_svg_attrs, icon_title: icon_title %}

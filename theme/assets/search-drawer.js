@@ -293,6 +293,8 @@ class DrawerSearchSection extends HTMLElement {
     this.assertive.innerHTML = '';
 
     allH3.forEach(h3 => {
+        const newH = h3.innerText;
+        h3.innerHTML = newH;
         this.assertive.appendChild(h3.cloneNode(true));
     });
 

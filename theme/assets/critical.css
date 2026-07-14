@@ -2881,7 +2881,7 @@ body.menu-drawer-overlay-on .page-header {
     animation-play-state: paused;
 }
 .wt-announcement__close:after {
-    content: "x";
+    content: "⏸︎";
 }
 .wt-announcement__close:hover, .wt-announcement__close:focus {
   background-color: #fff !important;
