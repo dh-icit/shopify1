@@ -102,7 +102,7 @@ if (!customElements.get("gallery-section")) {
 
         const default_configuration = {
           sliderEnabledBreakpoint: 900,
-          desktopLayout: "carousel-vertical",
+          desktopLayout: "carousel-vertical"
         };
 
         const custom_configuration = JSON.parse(
@@ -170,6 +170,7 @@ if (!customElements.get("gallery-section")) {
           });
         }
 
+        const announcer = document.getElementById('slider-announcer');
         // gallery swiper configuration
         const default_gallery_configuration = {
           autoHeight: autoHeightEnabled,
@@ -190,6 +191,13 @@ if (!customElements.get("gallery-section")) {
           on: {
             afterInit: initVideoInteractions,
             slideChangeTransitionEnd: handleSlideVideos,
+            
+            slideChange: function() {
+                announcer.textContent = '';
+                const current = this.realIndex + 1;
+                const total = this.slides.length;
+                announcer.textContent = `Showing slide ${current} из ${total}`;
+            }
           },
         };
 
@@ -356,7 +364,7 @@ if (!customElements.get("gallery-section")) {
         //           prevEl: ".wt-slider__nav-prev"
         //         }
         //     }
-            // console.log(this.gallery_configuration);
+            console.log(this.gallery_configuration);
           this.gallerySwiper = new Swiper(
             this.elements.gallery,
             this.gallery_configuration,

@@ -534,7 +534,7 @@
           "desktopLayout": "{{ desktop_layout }}"
         }
       </script>
-
+      <div class="visually-hidden" aria-live="polite" id="slider-announcer"></div>
       <div data-gallery class="{% if section.settings.enable-image-zoom %}photoswipe{% endif %}">
         <div class="card__badges card__badges--product">
           {% assign custom-badge-1-input = settings['custom-badge-1-input'] | downcase %}
@@ -614,6 +614,7 @@
               {% endif %}
             {% endfor %}
         </div>
+        
         <ul
           data-swiper-container
           class="sdsdsds {% if desktop_layout == 'masonry' %}swiper-wrapper--masonry{% elsif desktop_layout == 'fashion' %}swiper-wrapper--masonry{% else %}swiper-wrapper{% endif %}"
