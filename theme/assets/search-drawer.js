@@ -45,7 +45,7 @@ class DrawerSearchSection extends HTMLElement {
 
     this.suggestionMenuContent = this.querySelector(".search-result-top").cloneNode(true);
     this.timeOut = null;
-    this.assertive = document.querySelector('.search-result-wrapper_sse');
+    // this.assertive = document.querySelector('.search-result-wrapper_sse');
     this.init();
   }
 
@@ -286,17 +286,17 @@ class DrawerSearchSection extends HTMLElement {
     if(list)
         list.setAttribute("aria-expanded", true);
 
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(resultsMarkup, 'text/html');
-    const allH3 = doc.querySelectorAll('.wt-cart__item__name');
+    // const parser = new DOMParser();
+    // const doc = parser.parseFromString(resultsMarkup, 'text/html');
+    // const allH3 = doc.querySelectorAll('.wt-cart__item__name');
 
-    this.assertive.innerHTML = '';
+    // this.assertive.innerHTML = '';
 
-    allH3.forEach(h3 => {
-        const newH = h3.innerText;
-        h3.innerHTML = newH;
-        this.assertive.appendChild(h3.cloneNode(true));
-    });
+    // allH3.forEach(h3 => {
+    //     const newH = h3.innerText;
+    //     h3.innerHTML = newH;
+    //     this.assertive.appendChild(h3.cloneNode(true));
+    // });
 
     this.setLiveRegionResults();
   }
@@ -314,8 +314,10 @@ class DrawerSearchSection extends HTMLElement {
     this.removeAttribute("results");
     this.setAttribute("empty", true);
     this.statusElement.innerHTML = this.suggestionMenuContent.innerHTML || '';
-    this.querySelector('.search-result-list').setAttribute("aria-expanded", false);
-    this.assertive.innerHTML = '';
+    const results = this.querySelector('.search-result-list');
+    if(results)
+        results.setAttribute("aria-expanded", false);
+    // this.assertive.innerHTML = '';
     clearTimeout(this.timeOut);
     setTimeout(() => {
       this.statusElement.removeAttribute("aria-hidden");

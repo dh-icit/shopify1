@@ -653,3 +653,62 @@ if (container) {
         subtree: true
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const shopifyAccount = document.querySelector('shopify-account');
+    const root = shopifyAccount.shadowRoot;
+
+    console.log(root);
+
+    if (root) {
+
+        const dialog = dialog.querySelector('.dialog');
+        console.log(dialog);
+
+        if (dialog) {
+            dialog.setAttribute('role', 'dialog');
+            dialog.setAttribute('aria-modal', 'true');
+
+            dialog.querySelector("#close-button").setAttribute('title', 'Close modal');
+        }
+
+        const focusableSelectors = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+        dialog.addEventListener('keydown', function(e) {
+            // Нас интересует только клавиша Tab
+            if (e.key !== 'Tab') return;
+
+            console.log('dfdf');
+        
+            // Находим все фокусируемые элементы внутри диалога именно в момент нажатия
+            const focusableElements = Array.from(dialog.querySelectorAll(focusableSelectors))
+                .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null); // Исключаем скрытые и задизейбленные
+
+
+            console.log(root);
+
+            if (focusableElements.length === 0) return;
+
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+            
+            // ЕСЛИ нажат Shift + Tab (движение назад)
+            if (e.shiftKey) {
+                if (root.activeElement === firstElement) {
+                    lastElement.focus();
+                    console.log(lastElement);
+                    e.preventDefault();  // Отменяем стандартный переход браузера наружу
+                }
+            } 
+            // ЕСЛИ нажат просто Tab (движение вперед)
+            else {
+                if (root.activeElement === lastElement) {
+                    console.log(firstElement);
+                    firstElement.focus();
+                e.preventDefault();   // Отменяем стандартный переход браузера наружу
+                }
+            }
+        });
+
+    }
+
+});

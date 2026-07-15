@@ -1,6 +1,6 @@
 <div class="suggest-item">
   {%- if product.featured_media != blank -%}
-    <a href="{{ url }}" tabindex="0" title="{{ featured_media.alt | escape }}">
+    <a href="{{ url }}" tabindex="-1" title="{{ featured_media.alt | escape }}">
       <figure class="wt-cart__item__thumb suggest-item__thumb">
         <img
           src="{{ featured_media | image_url: width: 150 }}"
@@ -15,7 +15,7 @@
       {%- if settings.show_product_vendor -%}
         <div class="wt-cart__item__vendor">{{ product.vendor }}</div>
       {% endif %}
-      <a href="{{ url }}">
+      <a href="{{ url }}" tabindex="0">
         <h3 class="wt-cart__item__name">{{ name }}</h3>
       </a>
       {%- if settings.show_product_price -%}
