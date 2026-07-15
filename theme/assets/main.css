@@ -12863,3 +12863,25 @@ a[href="https://www.parcelwill.com/"],
 .form__success-field {
   color: #057905 !important;
 }
+
+.marquee-toggle_btn {
+    position: relative;
+    z-index: 20;
+    padding: 6px 8px;
+    /* visibility: hidden; */
+    position: absolute;
+    opacity: 0.5;
+    right: 8px;
+    bottom: 0px;
+}
+.marquee-toggle_btn {
+    bottom: 8px;
+}
+
+
+.marquee-toggle_btn:before {
+    content: "⏸︎";
+}
+.marquee-toggle_btn.stop:before {
+    content: '▶';
+}
