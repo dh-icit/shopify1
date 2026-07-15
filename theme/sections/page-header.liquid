@@ -234,6 +234,169 @@ myDiv.setAttribute('role', 'banner');
       </div>
     {% endif %}
 
+    
+
+    {%- if section.settings.layout == 'option_1' and section.settings.sticky_header -%}
+      <a
+        href="#"
+        class="wt-header__icon wt-header__sticky-menu-trigger  wt-header__sticky-menu-trigger--v1 wt-icon"
+        rel="toggle-menu"
+        role="button"
+        aria-label="{{ 'aria-label.page-header-toggle-menu' | t }}"
+        aria-controls="wt-drawer-nav"
+        aria-expanded="false"
+      >
+        {% if settings.menu_icon %}
+          {{
+            settings.menu_icon
+            | image_url: width: settings.menu_icon.width
+            | image_tag: class: 'svg-icon svg-icon--bars'
+          }}
+        {% else %}
+          {% render 'icons', id: 'bars' %}
+        {% endif %}
+
+        {% render 'icons', id: 'close' %}
+      </a>
+    {% endif %}
+
+    <div class="wt-header__logo-wrapper">
+      {%- if section.settings.layout == 'option_1' -%}
+        <a
+          href="#"
+          class="wt-header__icon wt-header__menu-trigger wt-icon"
+          rel="toggle-menu"
+          aria-label="{{ 'aria-label.page-header-toggle-menu' | t }}"
+        >
+          {% if settings.menu_icon %}
+            {{
+              settings.menu_icon
+              | image_url: width: settings.menu_icon.width
+              | image_tag: class: 'svg-icon svg-icon--bars'
+            }}
+          {% else %}
+            {% render 'icons', id: 'bars' %}
+          {% endif %}
+        </a>
+      {%- endif -%}
+
+      <div class="wt-header__logo__placeholder" aria-hidden="true">
+        {%- if section.settings.logo != blank or section.settings.transparent_logo != blank -%}
+          {% if section.settings.logo != blank %}
+            {%- assign large_image_size = section.settings.large_screen_logo_width -%}
+            {%- assign large_image_size_double = large_image_size | times: 2 -%}
+
+            <img
+              srcset="{{ section.settings.logo | image_url: width: large_image_size }} 1x, {{ section.settings.logo | image_url: width: large_image_size_double }} 2x"
+              src="{{ section.settings.logo | image_url: width: large_image_size }}"
+              loading="lazy" aria-hidden="true"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+
+            {%- assign mobile_image_size = section.settings.mobile_screen_logo_width -%}
+            {%- assign mobile_image_size_double = mobile_image_size | times: 2 -%}
+            <img
+              srcset="{{ section.settings.logo | image_url: width: mobile_image_size }} 1x, {{ section.settings.logo | image_url: width: mobile_image_size_double }} 2x"
+              src="{{ section.settings.logo | image_url: width: mobile_image_size }}"
+              loading="lazy" aria-hidden="true"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img wt-header__logo__img--mobile" 
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {% endif %}
+
+          {% assign transp_logo = section.settings.transparent_logo %}
+          {% if transp_logo != blank %}
+            <img
+              srcset="{{ transp_logo | image_url: width: large_image_size }} 1x, {{ transp_logo | image_url: width: large_image_size_double }} 2x"
+              src="{{ transp_logo | image_url: width: large_image_size }}"
+              loading="lazy"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img wt-header__logo__img--transparent"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {% endif %}
+        {%- else -%}
+          {{ shop.name }}
+        {%- endif -%}
+      </div>
+      {%- if request.page_type == 'index' -%}
+        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo">
+      {% else %}
+        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo">
+      {% endif %}
+
+      <a
+        href="{{ routes.root_url }}"
+        class="wt-header__logo__link" aria-label="The Lift Box"
+        style="
+          {% if section.settings.logo %}
+          --logo-width: {{ section.settings.mobile_screen_logo_width }}px;
+          --logo-width-desk: {{ section.settings.large_screen_logo_width }}px;
+          {% else %}
+            --logo-width: auto;
+            --logo-width-desk: auto;
+          {% endif %}
+        "
+        tabindex="0"
+      >
+        {%- if section.settings.logo != blank or section.settings.transparent_logo != blank -%}
+          {% if section.settings.logo != blank %}
+            {%- assign large_image_size = section.settings.large_screen_logo_width -%}
+            {%- assign large_image_size_double = large_image_size | times: 2 -%}
+
+            <img
+              srcset="{{ section.settings.logo | image_url: width: large_image_size }} 1x, {{ section.settings.logo | image_url: width: large_image_size_double }} 2x"
+              src="{{ section.settings.logo | image_url: width: large_image_size }}"
+              loading="lazy"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+
+            {%- assign mobile_image_size = section.settings.mobile_screen_logo_width -%}
+            {%- assign mobile_image_size_double = mobile_image_size | times: 2 -%}
+            <img
+              srcset="{{ section.settings.logo | image_url: width: mobile_image_size }} 1x, {{ section.settings.logo | image_url: width: mobile_image_size_double }} 2x"
+              src="{{ section.settings.logo | image_url: width: mobile_image_size }}"
+              loading="lazy"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img wt-header__logo__img--mobile" 
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {% endif %}
+
+          {% assign transp_logo = section.settings.transparent_logo %}
+          {% if transp_logo != blank %}
+            <img
+              srcset="{{ transp_logo | image_url: width: large_image_size }} 1x, {{ transp_logo | image_url: width: large_image_size_double }} 2x"
+              src="{{ transp_logo | image_url: width: large_image_size }}"
+              loading="lazy"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              class="wt-header__logo__img wt-header__logo__img--transparent"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {% endif %}
+        {%- else -%}
+          {{ shop.name }}
+        {%- endif -%}
+      </a>
+
+      {%- if request.page_type == 'index' -%}
+      </div>
+      {% else %}
+        </div>
+      {% endif %}
+    </div>
+
     <div class="wt-header__aside {% if section.settings.show_search == false %}wt-header__aside--no-search{% endif %}">
       {%- if section.settings.layout != 'option_1' -%}
         <a
@@ -447,172 +610,11 @@ myDiv.setAttribute('role', 'banner');
     {% endif %}
     </div>
 
-    {%- if section.settings.layout == 'option_1' and section.settings.sticky_header -%}
-      <a
-        href="#"
-        class="wt-header__icon wt-header__sticky-menu-trigger  wt-header__sticky-menu-trigger--v1 wt-icon"
-        rel="toggle-menu"
-        role="button"
-        aria-label="{{ 'aria-label.page-header-toggle-menu' | t }}"
-        aria-controls="wt-drawer-nav"
-        aria-expanded="false"
-      >
-        {% if settings.menu_icon %}
-          {{
-            settings.menu_icon
-            | image_url: width: settings.menu_icon.width
-            | image_tag: class: 'svg-icon svg-icon--bars'
-          }}
-        {% else %}
-          {% render 'icons', id: 'bars' %}
-        {% endif %}
-
-        {% render 'icons', id: 'close' %}
-      </a>
-    {% endif %}
-
-    <div class="wt-header__logo-wrapper">
-      {%- if section.settings.layout == 'option_1' -%}
-        <a
-          href="#"
-          class="wt-header__icon wt-header__menu-trigger wt-icon"
-          rel="toggle-menu"
-          aria-label="{{ 'aria-label.page-header-toggle-menu' | t }}"
-        >
-          {% if settings.menu_icon %}
-            {{
-              settings.menu_icon
-              | image_url: width: settings.menu_icon.width
-              | image_tag: class: 'svg-icon svg-icon--bars'
-            }}
-          {% else %}
-            {% render 'icons', id: 'bars' %}
-          {% endif %}
-        </a>
-      {%- endif -%}
-
-      <div class="wt-header__logo__placeholder" aria-hidden="true">
-        {%- if section.settings.logo != blank or section.settings.transparent_logo != blank -%}
-          {% if section.settings.logo != blank %}
-            {%- assign large_image_size = section.settings.large_screen_logo_width -%}
-            {%- assign large_image_size_double = large_image_size | times: 2 -%}
-
-            <img
-              srcset="{{ section.settings.logo | image_url: width: large_image_size }} 1x, {{ section.settings.logo | image_url: width: large_image_size_double }} 2x"
-              src="{{ section.settings.logo | image_url: width: large_image_size }}"
-              loading="lazy" aria-hidden="true"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-
-            {%- assign mobile_image_size = section.settings.mobile_screen_logo_width -%}
-            {%- assign mobile_image_size_double = mobile_image_size | times: 2 -%}
-            <img
-              srcset="{{ section.settings.logo | image_url: width: mobile_image_size }} 1x, {{ section.settings.logo | image_url: width: mobile_image_size_double }} 2x"
-              src="{{ section.settings.logo | image_url: width: mobile_image_size }}"
-              loading="lazy" aria-hidden="true"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img wt-header__logo__img--mobile" 
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {% endif %}
-
-          {% assign transp_logo = section.settings.transparent_logo %}
-          {% if transp_logo != blank %}
-            <img
-              srcset="{{ transp_logo | image_url: width: large_image_size }} 1x, {{ transp_logo | image_url: width: large_image_size_double }} 2x"
-              src="{{ transp_logo | image_url: width: large_image_size }}"
-              loading="lazy"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img wt-header__logo__img--transparent"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {% endif %}
-        {%- else -%}
-          {{ shop.name }}
-        {%- endif -%}
-      </div>
-      {%- if request.page_type == 'index' -%}
-        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo">
-      {% else %}
-        <div itemscope itemtype="http://schema.org/Organization" class="wt-header__logo">
-      {% endif %}
-
-      <a
-        href="{{ routes.root_url }}"
-        class="wt-header__logo__link" aria-label="The Lift Box"
-        style="
-          {% if section.settings.logo %}
-          --logo-width: {{ section.settings.mobile_screen_logo_width }}px;
-          --logo-width-desk: {{ section.settings.large_screen_logo_width }}px;
-          {% else %}
-            --logo-width: auto;
-            --logo-width-desk: auto;
-          {% endif %}
-        "
-        tabindex="0"
-      >
-        {%- if section.settings.logo != blank or section.settings.transparent_logo != blank -%}
-          {% if section.settings.logo != blank %}
-            {%- assign large_image_size = section.settings.large_screen_logo_width -%}
-            {%- assign large_image_size_double = large_image_size | times: 2 -%}
-
-            <img
-              srcset="{{ section.settings.logo | image_url: width: large_image_size }} 1x, {{ section.settings.logo | image_url: width: large_image_size_double }} 2x"
-              src="{{ section.settings.logo | image_url: width: large_image_size }}"
-              loading="lazy"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-
-            {%- assign mobile_image_size = section.settings.mobile_screen_logo_width -%}
-            {%- assign mobile_image_size_double = mobile_image_size | times: 2 -%}
-            <img
-              srcset="{{ section.settings.logo | image_url: width: mobile_image_size }} 1x, {{ section.settings.logo | image_url: width: mobile_image_size_double }} 2x"
-              src="{{ section.settings.logo | image_url: width: mobile_image_size }}"
-              loading="lazy"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img wt-header__logo__img--mobile" 
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {% endif %}
-
-          {% assign transp_logo = section.settings.transparent_logo %}
-          {% if transp_logo != blank %}
-            <img
-              srcset="{{ transp_logo | image_url: width: large_image_size }} 1x, {{ transp_logo | image_url: width: large_image_size_double }} 2x"
-              src="{{ transp_logo | image_url: width: large_image_size }}"
-              loading="lazy"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              class="wt-header__logo__img wt-header__logo__img--transparent"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {% endif %}
-        {%- else -%}
-          {{ shop.name }}
-        {%- endif -%}
-      </a>
-
-      {%- if request.page_type == 'index' -%}
-      </div>
-      {% else %}
-        </div>
-      {% endif %}
-    </div>
-
     <ul class="wt-header__panel wt-header__panel--no-labels">
       {%- if shop.customer_accounts_enabled -%}
         <li class="wt-header__panel__item wt-header__panel__item--account" title="Account">
-          <shopify-account menu="{{ section.settings.customer_account_menu }}">
-            <div slot="signed-out-avatar" tabindex="0">
+          <shopify-account menu="{{ section.settings.customer_account_menu }}" tabindex="0">
+            <div slot="signed-out-avatar">
               {% if settings.account_icon %}
                 {{ settings.account_icon | image_url: width: settings.account_icon.width | image_tag: class: 'svg-icon svg-icon--user' }}
               {% else %}
@@ -715,7 +717,7 @@ myDiv.setAttribute('role', 'banner');
             {%- if shop.customer_accounts_enabled -%}
               <li class="wt-page-nav-mega__aside-list__item wt-page-nav-mega__login">
                 <shopify-account menu="{{ section.settings.customer_account_menu }}" >
-                  <div class="signed-out-avatar-menu" slot="signed-out-avatar" tabindex="0">
+                  <div class="signed-out-avatar-menu" slot="signed-out-avatar">
                     {% if settings.account_icon %}
                       {{ settings.account_icon | image_url: width: settings.account_icon.width | image_tag: class: 'svg-icon svg-icon--user' }}
                     {% else %}

@@ -8506,7 +8506,7 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
 }
 .wt-collapse__target__content ul {
     list-style-type: none !important;
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 .wt-product .wt-collapse__trigger--active + .wt-collapse__target {
   grid-template-rows: 1fr;
@@ -12877,11 +12877,18 @@ a[href="https://www.parcelwill.com/"],
 .marquee-toggle_btn {
     bottom: 8px;
 }
-
-
 .marquee-toggle_btn:before {
     content: "⏸︎";
 }
 .marquee-toggle_btn.stop:before {
     content: '▶';
+}
+.wt-header__aside  {
+    order: 1;
+}
+.wt-header__logo-wrapper {
+    order: 2;
+}
+.wt-header__panel {
+    order: 3;
 }
