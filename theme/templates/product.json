@@ -204,7 +204,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "MORE INFO",
-            "content": "<p>🏆 Voted one of the best subscription boxes of 2024. Every box is worth well more than what you pay.</p><p>✅ Discover new brands every month across the best supplements, accessories, and healthy snacks available.</p><p>✅ You get a shirt or tank in EVERY box. Choose your shirt style and switch between tank or tee any time.</p><p>✅ No long term commitments, you can cancel at any time by logging into your portal, emailing us, or texting us. Zero hassle.</p><p>✅<strong> </strong>We send surveys 30 days after every box. If you take 2 minutes to fill them out, you'll receive a $5 off code EVERY time.</p>",
+            "content": "<p>🏆 Voted one of the best subscription boxes of 2024. Every box is worth well more than what you pay.</p><ul><li>✅ Discover new brands every month across the best supplements, accessories, and healthy snacks available.</li><li>✅ You get a shirt or tank in EVERY box. Choose your shirt style and switch between tank or tee any time.</li><li>✅ No long term commitments, you can cancel at any time by logging into your portal, emailing us, or texting us. Zero hassle.</li><li>✅<strong> </strong>We send surveys 30 days after every box. If you take 2 minutes to fill them out, you'll receive a $5 off code EVERY time.</li></ul>",
             "metafield_variables": "",
             "page": "",
             "open_by_default": false,
