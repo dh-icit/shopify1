@@ -659,6 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const root = shopifyAccount.shadowRoot;
 
     console.log(root);
+    return;
 
     if (root) {
 
@@ -674,14 +675,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const focusableSelectors = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
         dialog.addEventListener('keydown', function(e) {
-            // Нас интересует только клавиша Tab
+            
             if (e.key !== 'Tab') return;
 
             console.log('dfdf');
         
-            // Находим все фокусируемые элементы внутри диалога именно в момент нажатия
+           
             const focusableElements = Array.from(dialog.querySelectorAll(focusableSelectors))
-                .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null); // Исключаем скрытые и задизейбленные
+                .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
 
 
             console.log(root);
@@ -691,20 +692,20 @@ document.addEventListener("DOMContentLoaded", () => {
             const firstElement = focusableElements[0];
             const lastElement = focusableElements[focusableElements.length - 1];
             
-            // ЕСЛИ нажат Shift + Tab (движение назад)
+            
             if (e.shiftKey) {
                 if (root.activeElement === firstElement) {
                     lastElement.focus();
                     console.log(lastElement);
-                    e.preventDefault();  // Отменяем стандартный переход браузера наружу
+                    e.preventDefault();
                 }
             } 
-            // ЕСЛИ нажат просто Tab (движение вперед)
+           
             else {
                 if (root.activeElement === lastElement) {
                     console.log(firstElement);
                     firstElement.focus();
-                e.preventDefault();   // Отменяем стандартный переход браузера наружу
+                e.preventDefault();
                 }
             }
         });
