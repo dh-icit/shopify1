@@ -116,15 +116,6 @@
             "size_text_mobile": 140
           }
         },
-        "promo_wBVFy3": {
-          "type": "promo",
-          "settings": {
-            "content": "<p><strong>ONCE WE SELL OUT, THAT'S IT FOREVER!</strong></p>",
-            "text_alignment": "center",
-            "color-body-text": "#ffffff",
-            "background_color": "#e21c1c"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -147,7 +138,6 @@
         "product_variations_7LBAAU",
         "separator_xgqTJM",
         "price",
-        "promo_wBVFy3",
         "buy_buttons"
       ],
       "settings": {
