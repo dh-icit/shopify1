@@ -7,8 +7,8 @@
       </div>
     {% endcomment %}
     {%- if product != blank -%}
-      <div class="wt-dot__link" tabindex="0">
-        <a href="{{ product.url }}" title="{{product.title}}">
+      <div class="wt-dot__link">
+        <a href="{{ product.url }}" title="{{product.title}}" data-omit-tabindex="1">
           <picture class="wt-dot__picture">
             <img
               srcset="
