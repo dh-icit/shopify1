@@ -1,0 +1,476 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "image_banner_8TjbDq": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Image banner</h2>",
+        "full-width-enabled": false,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/ChatGPT_Image_Jun_24_2026_01_33_43_PM.png",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "out_hero_mobile": false,
+        "out-background-color": "rgba(0,0,0,0)",
+        "out-text-color": "rgba(0,0,0,0)",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "#000000",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 20,
+        "margin-bottom": 20,
+        "lcp_optimize": false
+      }
+    },
+    "image_banner_mGfrfG": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Image banner</h2>",
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/ChatGPT_Image_Jun_14_2026_04_05_12_PM.png",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "out_hero_mobile": false,
+        "out-background-color": "rgba(0,0,0,0)",
+        "out-text-color": "rgba(0,0,0,0)",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 0,
+        "margin-bottom": 0,
+        "lcp_optimize": false
+      }
+    },
+    "image_banner_VEJHxk": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Image banner</h2>",
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/ChatGPT_Image_Jun_24_2026_01_33_35_PM.png",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "out_hero_mobile": false,
+        "out-background-color": "rgba(0,0,0,0)",
+        "out-text-color": "rgba(0,0,0,0)",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 4,
+        "margin-bottom": 4,
+        "lcp_optimize": false
+      }
+    },
+    "collapsible_menu_Gzbqd7": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_N6jHDD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sale Info & FAQs",
+            "content": "<p>No discounts needed for savings, everything will auto apply at checkout!</p><p>These boxes will not start or affect any subscriptions. </p><p>If you order more than one box, we can not guarantee any 2 boxes will be the same OR different. </p><p>These boxes will be start shipping out right away but may take up to a week for us to get all of them shipped. </p>",
+            "page": "",
+            "icon": "box",
+            "icon_advanced_settings": false,
+            "icon_height_desktop": 28,
+            "icon_height": 27,
+            "icon_margin_desktop": 0,
+            "icon_margin": 0,
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_N6jHDD"
+      ],
+      "name": "t:sections.collapsible_menu.presets.name",
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": true,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_product_AYWTdM": {
+      "type": "featured-product",
+      "blocks": {
+        "title_q3YeKF": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "enable_vendor_link": false,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_WU3YTA": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "variant_picker_TX7gci": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "hide_unavailable_options": false,
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 60,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8,
+            "size_icon": "check_mark",
+            "size_link": "",
+            "variant_name": "",
+            "size_content": "",
+            "metafield": "",
+            "enable-striped-rows": true
+          }
+        },
+        "information_popup_wqkf7M": {
+          "type": "information_popup",
+          "settings": {
+            "size_icon": "shirt",
+            "size_link": "Size Chart",
+            "size_content": "size-chart",
+            "metafield": "",
+            "enable-striped-rows": true
+          }
+        },
+        "text_XPNf89": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>Lift Boxes include at least 4-6 supplements, a drink, an accessory item, 4 or more snacks, and your choice of a tee or tank. Shirts will be designs from past months.</p><p><strong>If you order more than one box, we can not guarantee any 2 boxes will be the same OR different. </strong></p>",
+            "page": ""
+          }
+        },
+        "buy_buttons_FtADaq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true,
+            "full_width_add_to_cart": false,
+            "custom_add_to_cart_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_q3YeKF",
+        "price_WU3YTA",
+        "variant_picker_TX7gci",
+        "information_popup_wqkf7M",
+        "text_XPNf89",
+        "buy_buttons_FtADaq"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Featured product</h2>",
+        "product": "built-for-battle-tee-or-tank",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "video_controls": false,
+        "video_custom_play_controls": false,
+        "video_custom_mute_controls": false,
+        "enable-preselected-variant": true,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "show-thumbnails-mobile": false,
+        "margin-top": 20,
+        "margin-bottom": 4
+      }
+    },
+    "featured_product_i8EMqP": {
+      "type": "featured-product",
+      "blocks": {
+        "title_MWQw4A": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "enable_vendor_link": false,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_3JU3Tr": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "text_VjyXPQ": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>Snack Boxes include 7-10 snacks and 2-4 supplements. EVERY box is packed FULL to the brim!</p><p><strong>If you order more than one box, we can not guarantee any 2 boxes will be the same OR different. </strong></p>",
+            "page": ""
+          }
+        },
+        "buy_buttons_pJKHyQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true,
+            "full_width_add_to_cart": false,
+            "custom_add_to_cart_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_MWQw4A",
+        "price_3JU3Tr",
+        "text_VjyXPQ",
+        "buy_buttons_pJKHyQ"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Featured product</h2>",
+        "product": "growth-over-comfort-tee-or-tank-copy",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "video_controls": false,
+        "video_custom_play_controls": false,
+        "video_custom_mute_controls": false,
+        "enable-preselected-variant": true,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "show-thumbnails-mobile": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_product_Fgd9eq": {
+      "type": "featured-product",
+      "blocks": {
+        "title_cjDCCi": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "enable_vendor_link": false,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_fayyg9": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "text_RDY8DQ": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>Snack Boxes include 7-10 snacks and 2-4 supplements. EVERY box is packed FULL to the brim!</p><p><strong>If you order more than one box, we can not guarantee any 2 boxes will be the same OR different. </strong></p>",
+            "page": ""
+          }
+        },
+        "buy_buttons_KDjedz": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true,
+            "full_width_add_to_cart": false,
+            "custom_add_to_cart_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_cjDCCi",
+        "price_fayyg9",
+        "text_RDY8DQ",
+        "buy_buttons_KDjedz"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Featured product</h2>",
+        "product": "built-not-bought-tee-or-tank",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "video_controls": false,
+        "video_custom_play_controls": false,
+        "video_custom_mute_controls": false,
+        "enable-preselected-variant": true,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "show-thumbnails-mobile": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_product_JTKCQT": {
+      "type": "featured-product",
+      "blocks": {
+        "title_EeW7hj": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "enable_vendor_link": false,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "price_XY9GwA": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": true,
+            "size_text": 140,
+            "size_text_mobile": 100
+          }
+        },
+        "text_CdpNE4": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "<p>Snack Boxes include 7-10 snacks and 2-4 supplements. EVERY box is packed FULL to the brim!</p><p><strong>If you order more than one box, we can not guarantee any 2 boxes will be the same OR different. </strong></p>",
+            "page": ""
+          }
+        },
+        "buy_buttons_defWcB": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "button-background": "#1990c6",
+            "button-text": "#ffffff",
+            "button-text-hover": "#ffffff",
+            "button-background-hover": "#136f99",
+            "show_qty_selector": true,
+            "full_width_add_to_cart": false,
+            "custom_add_to_cart_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_EeW7hj",
+        "price_XY9GwA",
+        "text_CdpNE4",
+        "buy_buttons_defWcB"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "advanced_heading": false,
+        "heading": "",
+        "heading_richtext": "<h2>Featured product</h2>",
+        "product": "mystery-shirt-1",
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "original",
+        "enable_video_looping": false,
+        "video_controls": false,
+        "video_custom_play_controls": false,
+        "video_custom_mute_controls": false,
+        "enable-preselected-variant": true,
+        "enable-image-zoom": true,
+        "mobile-image": "small",
+        "show-thumbnails-mobile": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_8TjbDq",
+    "image_banner_mGfrfG",
+    "image_banner_VEJHxk",
+    "collapsible_menu_Gzbqd7",
+    "featured_product_AYWTdM",
+    "featured_product_i8EMqP",
+    "featured_product_Fgd9eq",
+    "featured_product_JTKCQT"
+  ]
+}
