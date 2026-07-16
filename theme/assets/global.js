@@ -655,76 +655,52 @@ if (container) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
-
-    setTimeout( function() {
-        const csc = document.querySelector('[data-section-id="template--21499023950055__multicolumn_FfNnPV"]');
-        console.log(csc);
-
-        if(!csc) return;
-        const links = csc.querySelectorAll('.hero__pic__link');
-        links.forEach( link => {
-            console.log(link);
-            link.setAttribute('tabindex', '-1');
-        } );
-    }, 500 );
-
-
     const shopifyAccount = document.querySelector('shopify-account');
     const root = shopifyAccount.shadowRoot;
+    
 
-    console.log(root);
-    return;
+    if (!root) return;
 
-    if (root) {
+    const dialog = root.querySelector('.dialog');
+    if (!dialog) return;
 
-        const dialog = dialog.querySelector('.dialog');
-        console.log(dialog);
+    dialog.addEventListener('mouseenter', function() {
+        const close = dialog.querySelector("#close-button");
+        if( !close ) return;
+        if(close.getAttribute('title')) return;
+        close.setAttribute('title', 'Close modal');
+    });
 
-        if (dialog) {
-            dialog.setAttribute('role', 'dialog');
-            dialog.setAttribute('aria-modal', 'true');
-
-            dialog.querySelector("#close-button").setAttribute('title', 'Close modal');
-        }
-
-        const focusableSelectors = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-        dialog.addEventListener('keydown', function(e) {
-            
-            if (e.key !== 'Tab') return;
-
-            console.log('dfdf');
+    
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    const focusableSelectors = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+    dialog.addEventListener('keydown', function(e) {
+        if (e.key !== 'Tab') return;        
         
-           
-            const focusableElements = Array.from(dialog.querySelectorAll(focusableSelectors))
-                .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
+        const focusableElements = Array.from(dialog.querySelectorAll(focusableSelectors))
+            .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
 
+        if (focusableElements.length === 0) return;
 
-            console.log(root);
-
-            if (focusableElements.length === 0) return;
-
-            const firstElement = focusableElements[0];
-            const lastElement = focusableElements[focusableElements.length - 1];
-            
-            
-            if (e.shiftKey) {
-                if (root.activeElement === firstElement) {
-                    lastElement.focus();
-                    console.log(lastElement);
-                    e.preventDefault();
-                }
-            } 
-           
-            else {
-                if (root.activeElement === lastElement) {
-                    console.log(firstElement);
-                    firstElement.focus();
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        if (e.shiftKey) {                
+            if (root.activeElement === firstElement) {                    
+                lastElement.focus();                    
                 e.preventDefault();
-                }
             }
-        });
+        } else {
+            if (root.activeElement === lastElement) {
+                firstElement.focus();
+                e.preventDefault();
+            }
+        }
+        
+        
+    });
 
-    }
+    
 
 });
