@@ -26,25 +26,25 @@
     "rich_text_hRU4nn": {
       "type": "rich-text",
       "blocks": {
-        "heading_bKHV6c": {
-          "type": "heading",
+        "text_rwNhRF": {
+          "type": "text",
           "settings": {
-            "heading": "ABOUT US",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
+            "text": "<h1>About us</h1>",
+            "disable_on_mobile": false
           }
         }
       },
       "block_order": [
-        "heading_bKHV6c"
+        "text_rwNhRF"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "full-width-enabled": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "background_gradient": "",
         "margin-top": 20,
         "margin-bottom": 20
       }
@@ -65,7 +65,9 @@
         "3f541413-67b8-4c65-8d71-a84071ae664f"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "text_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -102,7 +104,9 @@
         "210693db-9734-4e2b-b162-2d4089b64b48"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "image_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -139,7 +143,9 @@
         "b36f9bca-3524-473d-b88f-21d201462254"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "text_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -176,7 +182,9 @@
         "text_yNHkCQ"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "image_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -213,7 +221,9 @@
         "text_hLrW6x"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "text_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -250,7 +260,9 @@
         "text_HDgmb6"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "image_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
@@ -287,7 +299,9 @@
         "text_DNEnEm"
       ],
       "settings": {
+        "advanced_heading": false,
         "title": "",
+        "heading_richtext": "<h2>Image with text</h2>",
         "layout": "text_first",
         "desktop-percentage-image-width": 50,
         "full-width-enabled": true,
