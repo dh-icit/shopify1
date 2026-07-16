@@ -655,6 +655,21 @@ if (container) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+
+    setTimeout( function() {
+        const csc = document.querySelector('[data-section-id="template--21499023950055__multicolumn_FfNnPV"]');
+        console.log(csc);
+
+        if(!csc) return;
+        const links = csc.querySelectorAll('.hero__pic__link');
+        links.forEach( link => {
+            console.log(link);
+            link.setAttribute('tabindex', '-1');
+        } );
+    }, 500 );
+
+
     const shopifyAccount = document.querySelector('shopify-account');
     const root = shopifyAccount.shadowRoot;
 
