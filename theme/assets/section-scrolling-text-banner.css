@@ -89,7 +89,7 @@
 }
 .wt-scrolling-text-banner .hero-toggle_btn:before,
 .marquee-toggle_btn:before {
-    content: 'x';
+    content: '⏸︎';
 }
 .wt-scrolling-text-banner .hero-toggle_btn.stop:before,
 .marquee-toggle_btn.stop:before {

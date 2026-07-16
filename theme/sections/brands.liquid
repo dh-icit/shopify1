@@ -107,13 +107,25 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              <div class="wt-brands__image">
-                {{ 'image' 
-                  | placeholder_svg_tag: 'wt-brands__image--placeholder'
-                  | image_tag:
-                        alt: alt_text,
-                        class: 'wt-brands__image' }}
-              </div>
+              
+                {% if block.settings.desktop_image != blank %}
+                  {% assign alt_text = block.settings.desktop_image.alt | escape | default: "" %}
+                  {{
+                    block.settings.desktop_image
+                    | image_url: width: 280
+                    | image_tag:
+                      widths: '140, 280',
+                      sizes: '140px',
+                      alt: alt_text,
+                      loading: 'eager',
+                      class: 'wt-brands__image'
+                  }}
+                {% else %}
+                  <div class="wt-brands__image">
+                    {{ 'image' | placeholder_svg_tag: 'wt-brands__image--placeholder' }}
+                  </div>
+                {% endif %}
+              
             </div>
           </div>
         {% endfor %}

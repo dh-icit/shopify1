@@ -132,7 +132,7 @@ if (!customElements.get("slideshow-section")) {
         const totalSlides = swiper.slides.length;
         const slidesPerView = swiper.params.slidesPerView;
 
-        if (swiper && totalSlides > slidesPerView) {
+        if (swiper && totalSlides > slidesPerView || slidesPerView === 'auto') {
           swiper.slides.forEach((slide) => {
             if (isSlidesGroup) {
               const slideRect = slide.getBoundingClientRect();
