@@ -655,6 +655,11 @@ if (container) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const flag = document.querySelector('.wt-localization-trigger .wt-flag-icon');
+    if(flag)
+        flag.setAttribute('aria-hidden', 'true');
+});
+document.addEventListener("DOMContentLoaded", () => {
     const shopifyAccount = document.querySelector('shopify-account');
     const root = shopifyAccount.shadowRoot;
     

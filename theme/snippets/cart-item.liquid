@@ -25,6 +25,7 @@
           loading="lazy"
           height="{{ item.image.height }}"
           width="{{ item.image.width }}"
+          aria-hidden="true"
         >
       {% else %}
         {{ 'collection-apparel-1' | placeholder_svg_tag: 'card__img--placeholder' }}
