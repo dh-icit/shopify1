@@ -32,7 +32,7 @@
           "type": "text",
           "settings": {
             "heading_text": "Contact",
-            "text": "<p><strong>EMAIL</strong>: info@theliftbx.com</p><p>You can call or text us at <strong>843-791-0451 </strong>for support. By texting this number, you agree to receive recurring SMS messages from The Lift Box related to your customer service inquiry. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe or HELP for help.</p><p><strong>ADDRESS</strong></p><p>3255 Fortune Drive, Ste B</p><p>North Charleston, SC 29418</p>"
+            "text": "<p><strong>EMAIL</strong>: info@theliftbx.com</p><p>You can call or text us at <strong>843-791-0451 </strong>for support. By texting this number, you agree to receive recurring SMS messages from The Lift Box related to your customer service inquiry. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe or HELP for help.</p><h4><strong>ADDRESS</strong></h4><p>3255 Fortune Drive, Ste B</p><p>North Charleston, SC 29418</p>"
           }
         },
         "image_MKEER4": {
@@ -50,6 +50,7 @@
         "image_MKEER4"
       ],
       "settings": {
+        "show-scroll-effect": false,
         "show-social-media-icons": true,
         "show_country_selector": true,
         "show_country_selector_label": true,
@@ -57,6 +58,7 @@
         "show_language_selector": true,
         "enable_follow_on_shop": false,
         "show-payments-icons": true,
+        "payment_icons_monochrome": false,
         "show-copyright": true,
         "text": "© 2025 The Lift Box",
         "big-logo-width": 28,
