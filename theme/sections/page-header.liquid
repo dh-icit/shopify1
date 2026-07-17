@@ -716,7 +716,7 @@ myDiv.setAttribute('role', 'banner');
             {%- endfor -%}
             {%- if shop.customer_accounts_enabled -%}
               <li class="wt-page-nav-mega__aside-list__item wt-page-nav-mega__login">
-                <shopify-account menu="{{ section.settings.customer_account_menu }}" >
+                <shopify-account menu="{{ section.settings.customer_account_menu }}" tabindex="0">
                   <div class="signed-out-avatar-menu" slot="signed-out-avatar">
                     {% if settings.account_icon %}
                       {{ settings.account_icon | image_url: width: settings.account_icon.width | image_tag: class: 'svg-icon svg-icon--user' }}
