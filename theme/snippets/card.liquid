@@ -68,7 +68,8 @@
                 sizes: '(min-width: 1000px) 620px, 100vw',
                 width: null,
                 widths: '375, 750, 1000, 1440',
-                alt: '',
+                alt: img.alt,
+                aria-hidden: 'true',
                 class: card_classes
             }}
           {% elsif img %}
@@ -100,8 +101,9 @@
                 loading="{{ loading }}"
                 width="{{ img.width }}"
                 height="{{ img.height }}"
+                aria-hidden='true'
               >
-            {% else %}
+            {% else %}   
               <img
                 class="card__img hidden"
                 srcset="
@@ -117,6 +119,7 @@
                 loading="{{ loading }}"
                 width="{{ img.width }}"
                 height="{{ img.height }}"
+                aria-hidden='true'
               >
             {% endif %}
 
@@ -136,6 +139,7 @@
                 loading="{{ loading }}"
                 width="{{ img_hover.width }}"
                 height="{{ img_hover.height }}"
+                aria-hidden='true'
               >
             {% endif %}
           {% else %}
