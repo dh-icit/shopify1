@@ -363,6 +363,9 @@ if (!customElements.get("slideshow-section")) {
             },
             slideChangeTransitionEnd: (swiper) => {
               this.handleTabindex(swiper);
+                const activeSlide = swiper.$el[0].querySelector('.swiper-slide-active .wt-dot__body > a');
+                if(activeSlide)
+                    activeSlide.focus();
             },
           },
         };

@@ -200,6 +200,7 @@ function toggleTabindex(elements) {
 
 function setTabindex(elements, tabindex) {
   elements.forEach((el) => {
+    if(el.hasAttribute('data-not-set-tabindex')) return;
     el.setAttribute("tabindex", tabindex);
   });
 }
