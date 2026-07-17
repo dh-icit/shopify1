@@ -658,6 +658,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const flag = document.querySelector('.wt-localization-trigger .wt-flag-icon');
     if(flag)
         flag.setAttribute('aria-hidden', 'true');
+
+    const textItems = document.querySelectorAll('.wt-announcement__marquee .wt-announcement__text');
+    if(textItems) {
+        for (let index = 0; index < textItems.length; index++) {
+            if(index === 0) continue;
+            textItems[index].setAttribute('aria-hidden', 'true')            
+        }
+    }
 });
 document.addEventListener("DOMContentLoaded", () => {
     const shopifyAccount = document.querySelector('shopify-account');
