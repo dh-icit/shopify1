@@ -8060,6 +8060,14 @@ input.disabled + .f-swatch__list__link .f-swatch__list__link__content {
 .wt-product__sticky-buy--show .wt-button--full-width {
     max-width: 70%;
 }
+@media (max-width: 576px) {
+    .wt-product__sticky-buy__wrapper {
+        justify-content: center;
+    }
+    .wt-product__sticky-buy--show .wt-button--full-width {
+        max-width:48%;
+    }
+}
 .wt-product__sticky-buy--show svg {
   margin-right: 8px;
 }
