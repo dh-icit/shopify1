@@ -716,5 +716,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     
+    const lineargradients = document.querySelectorAll('lineargradient');
+    if(lineargradients) {
+        lineargradients.forEach(item => {
+            item.removeAttribute('id');
+        });
+    }
 
 });

@@ -231,7 +231,7 @@
   {{ 'simple-block.css' | asset_url | stylesheet_tag }}
 {% else %}
   {% if title %}
-    <h2 tabindex="0" class="d1ddd {% if prefix %}{{ prefix }}{% else %}block{% endif %}__title">{{ title }}</h2>
+    <h2 class="d1ddd {% if prefix %}{{ prefix }}{% else %}block{% endif %}__title">{{ title }}</h2>
   {% endif %}
   {% if title_h1 %}
     <h1 class="{% if prefix %}{{ prefix }}{% else %}block{% endif %}__title">{{ title }}</h1>
