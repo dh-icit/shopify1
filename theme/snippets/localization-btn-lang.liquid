@@ -4,7 +4,8 @@
   class="wt-localization-trigger wt-localization-trigger--lang {{ custom_class }}"
   data-open-drawer="language"
   tabindex="{{ tab_index }}"
-  aria-label="Choose language"
+  aria-label="{{ localization.language.iso_code | upcase }} - Choose language"
+  title="{{ localization.language.iso_code | upcase }} - Choose language"
 >
   <span class="wt-localization-trigger__label">
     {{ localization.language.iso_code | upcase }}

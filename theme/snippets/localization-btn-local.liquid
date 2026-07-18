@@ -4,7 +4,8 @@
   class="wt-localization-trigger wt-localization-trigger--local {{ custom_class }}"
   data-open-drawer="country"
   tabindex="{{ tab_index }}"
-  aria-label="Choose localization"
+  aria-label=" {% if show_country_code %}{{- localization.country.iso_code }} /{% endif -%}{{ localization.country.currency.iso_code -}} - Choose localization"
+  title=" {% if show_country_code %}{{- localization.country.iso_code }} /{% endif -%}{{ localization.country.currency.iso_code -}} - Choose localization"
 >
   <span class="wt-localization-trigger__label">
     {% if show_country_flag %}
