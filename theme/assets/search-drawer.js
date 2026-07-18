@@ -236,6 +236,8 @@ class DrawerSearchSection extends HTMLElement {
       return;
     }
 
+    this.assertive.innerHTML = '';
+
     fetch(
       `${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&${encodeURIComponent("resources[type]")}=product,page,article,collection,query&${encodeURIComponent("resources[limit_scope]")}=each&${encodeURIComponent("resources[limit]")}=6&${encodeURIComponent("resources[options][fields]")}=${encodeURIComponent(this.searchProperties)}&section_id=predictive-search`,
     )
@@ -292,11 +294,18 @@ class DrawerSearchSection extends HTMLElement {
 
     this.assertive.innerHTML = '';
 
-    allH3.forEach(h3 => {
-        const newH = h3.innerText;
-        h3.innerHTML = newH;
-        this.assertive.appendChild(h3.cloneNode(true));
-    });
+    if(allH3) {
+        if(allH3.length === 1) {
+            this.assertive.innerHTML = allH3.length + ' result found.'
+        } else {
+            this.assertive.innerHTML = allH3.length + ' results found.'
+        }
+    }
+    // allH3.forEach(h3 => {
+    //     const newH = h3.innerText;
+    //     h3.innerHTML = newH;
+    //     this.assertive.appendChild(h3.cloneNode(true));
+    // });
 
     this.setLiveRegionResults();
   }
