@@ -723,4 +723,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const contactsImg = document.querySelectorAll('.template-page-contact .hero__pic img');
+    if(contactsImg) {
+        contactsImg.forEach(item => {
+            item.setAttribute('aria-hidden', 'true');
+        });
+    }
+    
+    popupImgF(0);
+
+    function popupImgF(index) {
+        const popupImg = document.querySelector('.go1079679603');
+        
+        if(!popupImg && index <= 20) {
+            index = index + 1;
+            setTimeout(() => {
+                popupImgF(index);
+            }, 100);
+        } else {
+            popupImg.setAttribute('aria-hidden', 'true');
+        }
+    }
+
 });

@@ -42,8 +42,8 @@
         "section_width": "regular",
         "desktop_text_horizontal_position": "center",
         "full-width-enabled": false,
-        "color-body-text": "transparent",
-        "background_color": "transparent",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
         "background_gradient": "",
         "margin-top": 20,
         "margin-bottom": 20
@@ -55,7 +55,7 @@
         "text_WyREpK": {
           "type": "text",
           "settings": {
-            "text": "<p>Have a quick question? <a href=\"/pages/help-center\" title=\"Help Center\"><span style=\"text-decoration:underline\">Check our Help Center</span></a> for a quick answer.</p><p>Email us by filling out the form below or contact us directly at info@theliftbx.com please.</p><p>You can also text the word LIFTBOX to (844) 987-4623 to opt-in and enable customer service messaging with us.</p>",
+            "text": "<h2>Have a quick question? </h2><p><a href=\"/pages/help-center\" title=\"Help Center\"><span style=\"text-decoration:underline\">Check our Help Center</span></a> for a quick answer.</p><p>Email us by filling out the form below or contact us directly at info@theliftbx.com please.</p><p>You can also text the word LIFTBOX to (844) 987-4623 to opt-in and enable customer service messaging with us.</p>",
             "text_style": "body",
             "disable_on_mobile": false
           }
