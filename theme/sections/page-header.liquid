@@ -511,6 +511,7 @@ myDiv.setAttribute('role', 'banner');
           {% endif %}
         </div>
         <div class="before_store-search-form" role="dialog" style="width: 100%;" aria-label="Search dialog" aria-expanded="false">
+            
         <form
           class="wt-header__search__body store-search-form"
           action="{{ routes.search_url }}"
@@ -593,6 +594,7 @@ myDiv.setAttribute('role', 'banner');
               <svg title="{{ 'aria-label.page-header-close-search' | t }}" class="svg-icon svg-icon--close " aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" data-icon-theme="option_2" width="72" height="72" viewBox="0 0 72 72"><g transform="rotate(-90 -0.00000157361 72)">                <rect x="0" y="72" fill="none" height="72" width="72"></rect>                <path d="m58.76152,133.58844l-22.762,-22.577l-22.762,22.577a1.413,1.413 0 0 1 -1.994,0l-0.828,-0.824a1.381,1.381 0 0 1 0,-1.976l22.973,-22.787l-22.973,-22.788a1.387,1.387 0 0 1 0,-1.98l0.828,-0.824a1.422,1.422 0 0 1 1.994,0l22.764,22.579l22.76,-22.579a1.425,1.425 0 0 1 2,0l0.828,0.824a1.39,1.39 0 0 1 0,1.98l-22.969,22.788l22.969,22.787a1.389,1.389 0 0 1 0,1.979l-0.828,0.82a1.415,1.415 0 0 1 -2,0l0,0.001z"></path></g></svg>
             </button>
           </div>
+
           <div class="wt-header__search__results">
             <div class="predictive-search-status">
               {% render 'search-top' %}
@@ -625,7 +627,7 @@ myDiv.setAttribute('role', 'banner');
         </li>
       {%- endif -%}
       <li class="wt-header__panel__item wt-header__panel__item--cart">
-        <a href="{{ routes.cart_url }}" class="wt-header__panel__link wt-icon wt-cart__trigger" id="cart-icon-bubble" aria-label="cart" aria-haspopup="dialog" title="Cart">
+        <a href="{{ routes.cart_url }}" class="wt-header__panel__link wt-icon wt-cart__trigger" id="cart-icon-bubble" aria-label="cart" aria-haspopup="dialog" title="Cart{% if cart.item_count != 0 %}. {{ cart.item_count }} item(s) in cart.{% endif %}">
           {% if settings.bag_icon %}
             {{
               settings.bag_icon
