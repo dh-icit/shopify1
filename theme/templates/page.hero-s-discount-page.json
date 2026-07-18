@@ -1,0 +1,125 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_hRU4nn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rwNhRF": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>CLAIM YOUR HERO'S DISCOUNT</h1>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_rwNhRF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "full-width-enabled": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_b3bgYn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_G9Btx4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>This offer is eligible for:</strong><br/>- Current & former U.S. military<br/>- First responders including law enforcement, fire, and EMS<br/>- Teachers (K-12 and University teachers/staff)</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_G9Btx4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "left",
+        "full-width-enabled": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "margin-top": 4,
+        "margin-bottom": 4
+      }
+    },
+    "rich_text_aYtBm3": {
+      "type": "rich-text",
+      "blocks": {
+        "text_b9JGn9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>How it works:</strong><br/>Click the button to claim your discount and you'll be asked to verify your affiliation with GOVX ID. Verification is real-time and secure. If you already have a GOVX ID account, just log in!<br/>After you verify, you'll receive a single-use discount code to apply at checkout. Be sure to copy your code.<br/>For future purchases, simply log in with your GOVX ID to unlock a new discount code.<br/>There is a limit of one discount code per day.</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_b9JGn9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "left",
+        "full-width-enabled": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "margin-top": 4,
+        "margin-bottom": 4
+      }
+    },
+    "button_UNpmhD": {
+      "type": "button",
+      "name": "t:sections.button.presets.name",
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "CLICK TO GET YOUR CODE",
+        "button_link": "https://auth.govx.com/shopify/verify?shop=the-lift-box.myshopify.com&utm_source=shopify&utm_medium=govxid&utm_campaign=custom_link",
+        "margin-top": 0,
+        "margin-bottom": 20,
+        "background_color": "#00000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_hRU4nn",
+    "rich_text_b3bgYn",
+    "rich_text_aYtBm3",
+    "button_UNpmhD"
+  ]
+}
